@@ -2,16 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Mirror;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerCombat : CharacterCombat
 {
 
-    [SerializeField] private LayerMask whatIsEnemy;
-    [SerializeField] private int damage = 1;
     [SerializeField] private float moveWhileAttackReductionCoef = 0.5f;
     [SerializeField] private float moveWhileBlockReductionCoef = 0.8f;
-    
     
     [SerializeField] private AnimationClip normalAttackClip;
     [SerializeField] private AnimationClip chargedAttackClip;
@@ -20,18 +18,9 @@ public class PlayerCombat : CharacterCombat
     private float attackDuration = 0;
     private float chargedAttackDuration = 0;
 
-    public Action BlockEvent;
 
     private bool isCacheBlocking = false;
-    
 
-    [SyncVar] private bool isCharging = false;
-    public bool IsCharging => isCharging;
-    [SyncVar] private bool attackIsCharged = false;
-    public bool AttackIsCharged => attackIsCharged;
-    [SyncVar] private bool blockHit = false;
-    public bool BlockHit => blockHit;
-    
     public new void Start()
     {
         base.Start();
@@ -39,17 +28,18 @@ public class PlayerCombat : CharacterCombat
         chargedAttackDuration = chargedAttackClip.length;
         attackDuration = normalAttackClip.length;
         
-        chargedHitWhileBlock += () => {CharacterController.SlowStatus.AddSlow(moveWhileBlockReductionCoef);};
+        chargedHitWhileBlock += () => { InterruptBlock(); };
     }
     
-    
+
     [Command]
     public void StartAttackCmd()
     {
-        if (isBlocking)
+        if (combatState != CombatState.Idle)
             return;
+
+        combatState = CombatState.Charge;
         
-        isCharging = true;
         CharacterController.SlowStatus.AddSlow(-moveWhileAttackReductionCoef);
     }
     
@@ -57,75 +47,76 @@ public class PlayerCombat : CharacterCombat
     [Command]
     public void PerformAttackCmd()
     {
-        if (isBlocking || !isCharging)
+        if (combatState != CombatState.Charge)
             return;
+
+        combatState = CombatState.Attack;
         
-        isAttacking = true;
-        isCharging = false;
         attackIsCharged = true;
-        StartCoroutine(EndAttack(chargedAttackDuration));
+        
+        StartCoroutine(Attack(chargedAttackDuration));
     }
     
 
     [Command]
     public void CancelAttackCmd()
     {
-        if (isBlocking || !isCharging)
+        if (combatState != CombatState.Charge)
             return;
+
+        combatState = CombatState.Attack;
         
-        isAttacking = true;
-        isCharging = false;
         attackIsCharged = false;
-        StartCoroutine(EndAttack(attackDuration));
+        
+        StartCoroutine(Attack(attackDuration));
     }
 
     [Command]
-    public void SetBlockCmd(bool block)
+    public void BlockCmd(bool block)
     {
         isCacheBlocking = block;
         
-        if (isCharging || isAttacking || isBlocking == block)
+        if (combatState != CombatState.Idle && block == true)
         {
             return;
         }
 
         isCacheBlocking = false;
-        isCharging = false;
-        isAttacking = false;
-        isBlocking = block;
-        
-        RaiseBlockEvent();
+        combatState = block ? CombatState.ChargeBlock : CombatState.Idle;
+        Block();
     }
 
-    [ClientRpc]
-    private void RaiseBlockEventClientRpc()
+    private void InterruptBlock()
     {
-        BlockEvent?.Invoke();
+        combatState = CombatState.Idle;
+        CharacterController.SlowStatus.AddSlow(moveWhileBlockReductionCoef);
+        RaiseWeaponClientRpc(true);
     }
 
     [Server]
-    private void RaiseBlockEvent()
+    private void Block()
     {
-        if (isServerOnly)
-        {
-            BlockEvent?.Invoke();
-        }
-
         if (isServer)
         {
-            if (isBlocking)
+            if (combatState == CombatState.ChargeBlock)
             {
                 EngageBlock(true);
+                RaiseWeaponClientRpc(false);
                 CharacterController.SlowStatus.AddSlow(-moveWhileBlockReductionCoef);
             }
             else
             {
                 EngageBlock(false);
+                RaiseWeaponClientRpc(true);
                 CharacterController.SlowStatus.AddSlow(moveWhileBlockReductionCoef);
             }
         }
-        
-        RaiseBlockEventClientRpc();
+    }
+
+    [ClientRpc]
+    private void RaiseWeaponClientRpc(bool raising)
+    {
+        currentWeapon.gameObject.SetActive(raising);
     }
     
     [Server]
@@ -137,8 +128,7 @@ public class PlayerCombat : CharacterCombat
         }
         else
         {
-            StopCoroutine(EngageBlock());
-            canBlock = false;
+            combatState = CombatState.Idle;
         }
         
     }
@@ -147,40 +137,29 @@ public class PlayerCombat : CharacterCombat
     private IEnumerator EngageBlock()
     {
         yield return new WaitForSeconds(raiseShieldClip.length);
-
-        canBlock = true;
+        if (combatState == CombatState.ChargeBlock)
+        {
+            combatState = CombatState.BlockReady;
+        }
     }
     
 
     [Server]
-    private IEnumerator EndAttack(float duration)
+    private IEnumerator Attack(float duration)
     {
+        // TODO : Attack dash here
+        
         yield return new WaitForSeconds(duration);
-        
-        isAttacking = false;
+
+        combatState = CombatState.Idle;
         attackIsCharged = false;
-        
         CharacterController.SlowStatus.AddSlow(moveWhileAttackReductionCoef);
         
         if (isCacheBlocking)
         {
-            isBlocking = true;
-            RaiseBlockEvent();
+            combatState = CombatState.ChargeBlock;
+            Block();
         }
         
-    }
-    
-
-    [Server]
-    public void WeaponHit(Collider2D hit)
-    {
-        // if collider hit is in layermask whatIsEnemy
-        if (whatIsEnemy == (whatIsEnemy | (1 << hit.gameObject.layer)) && isAttacking)
-        {
-            if(hit.TryGetComponent(out CharacterCombat hitCharacter))
-            {
-                hitCharacter.Damage(damage, attackIsCharged);
-            }
-        }
     }
 }

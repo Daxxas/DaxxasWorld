@@ -87,7 +87,7 @@ public class PlayerController : CharacterController
     
     private void InputMove(Vector2 inputDirection)
     {
-        if (inputDirection.magnitude > 0.01f && !playerCombat.IsAttacking)
+        if (inputDirection.magnitude > 0.01f && playerCombat.CombatState != CombatState.Attack)
         {
             isWalking = true;
         }

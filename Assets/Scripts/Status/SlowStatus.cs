@@ -17,7 +17,6 @@ public class SlowStatus
     {
         currentSlow += value;
         updated?.Invoke(currentSlow);
-        Debug.Log("Add slow called, new currentSlow = " + currentSlow);
     }
 
     public void SetSlow(float value)

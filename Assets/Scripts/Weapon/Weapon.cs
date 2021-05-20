@@ -7,22 +7,20 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
 
-    private PlayerCombat playerCombat;
+    private CharacterCombat characterCombat;
     private bool isActive = true;
+
+    public Action triggerEnter2D;
     
     private void Start()
     {
-        playerCombat = GetComponentInParent<PlayerCombat>();
-
-
-        playerCombat.BlockEvent += ChangeActivation;
-        
+        characterCombat = GetComponentInParent<CharacterCombat>();
     }
 
     [Server]
     private void OnTriggerEnter2D(Collider2D other)
     {
-        playerCombat.WeaponHit(other);
+        characterCombat.WeaponHit(other);
     }
 
     private void ChangeActivation()

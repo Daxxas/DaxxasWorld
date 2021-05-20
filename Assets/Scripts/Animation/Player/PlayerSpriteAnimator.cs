@@ -15,7 +15,6 @@ public class PlayerSpriteAnimator : NetworkBehaviour
     private NetworkAnimator networkAnimator;
     private Animator weaponAnimator;
     [SerializeField] private Animator shieldAnimator;
-    [SerializeField] private NetworkAnimator shieldNetworkAnimator;
 
     
     private void Start()
@@ -30,6 +29,7 @@ public class PlayerSpriteAnimator : NetworkBehaviour
         if (playerCombat.isServer)
         {
             playerCombat.hitBlock += StartBlockAnimation;
+            playerCombat.damagedEvent += GotHitAnimation;
         }
     }
 
@@ -38,12 +38,10 @@ public class PlayerSpriteAnimator : NetworkBehaviour
         animator.SetInteger("direction", playerController.lookDirection);
         shieldAnimator.SetInteger("direction", playerController.lookDirection);
         animator.SetBool("isWalking", playerController.IsWalking);
-        animator.SetBool("isAttacking", playerCombat.IsAttacking);
-        animator.SetBool("isBlocking", playerCombat.IsBlocking);
-        
-        shieldAnimator.SetBool("isBlocking", playerCombat.IsBlocking);
-
-        weaponAnimator.SetBool("isCharging", playerCombat.IsCharging);
+        animator.SetBool("isAttacking", playerCombat.CombatState == CombatState.Attack);
+        animator.SetBool("isBlocking", playerCombat.CombatState == CombatState.ChargeBlock || playerCombat.CombatState == CombatState.BlockReady);
+        shieldAnimator.SetBool("isBlocking", playerCombat.CombatState == CombatState.ChargeBlock || playerCombat.CombatState == CombatState.BlockReady);
+        weaponAnimator.SetBool("isCharging", playerCombat.CombatState == CombatState.Charge);
         weaponAnimator.SetBool("attackIsCharged", playerCombat.AttackIsCharged);
         
         if (playerController.Rigidbody != null)
@@ -51,6 +49,13 @@ public class PlayerSpriteAnimator : NetworkBehaviour
             animator.SetFloat("moveSpeed", playerController.Rigidbody.velocity.magnitude);
         }
     }
+
+    [Server]
+    private void GotHitAnimation(int damage)
+    {
+        networkAnimator.SetTrigger(Animator.StringToHash("gotHit"));
+    }
+    
 
     [Server]
     private void StartBlockAnimation()
