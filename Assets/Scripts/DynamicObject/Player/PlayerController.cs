@@ -1,3 +1,4 @@
+using Cinemachine;
 using Mirror;
 using UnityEngine;
 
@@ -20,6 +21,8 @@ public class PlayerController : CharacterController
         if (hasAuthority)
         {
             camera = Camera.main;
+            FindObjectOfType<CinemachineVirtualCamera>().Follow = transform;
+            FindObjectOfType<CinemachineVirtualCamera>().LookAt = transform;
         }
         
         weaponDirectionHandler = GetComponentInChildren<WeaponDirectionHandler>();

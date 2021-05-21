@@ -1,0 +1,1347 @@
+Using pre-set license
+Built from '2021.1/staging' branch; Version is '2021.1.5f1 (3737af19df53) revision 3618735'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 18363.1500; Version 1909; 64bit' Language: 'fr' Physical Memory: 16316 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\UnityEditor\2021.1.5f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Dev/DaxxasWorld
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+9884
+Successfully changed project path to: D:/Dev/DaxxasWorld
+D:/Dev/DaxxasWorld
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 134.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.5f1 (3737af19df53)
+[Subsystems] Discovering subsystems at path C:/Program Files/UnityEditor/2021.1.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Dev/DaxxasWorld/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3080 (ID=0x2206)
+    Vendor:   NVIDIA
+    VRAM:     10077 MB
+    Driver:   27.21.14.6089
+Initialize mono
+Mono path[0] = 'C:/Program Files/UnityEditor/2021.1.5f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/UnityEditor/2021.1.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/UnityEditor/2021.1.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56812
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/UnityEditor/2021.1.5f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/UnityEditor/2021.1.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003045 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 137.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.464 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.013614 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 141.69 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Find all reader and writers took 141 milliseconds
+Script Module: UnityEngine.UI.dll
+Weave behaviours and messages took94 milliseconds
+Find all reader and writers took 118 milliseconds
+Script Module: UnityEngine.TestRunner.dll
+Weave behaviours and messages took24 milliseconds
+Find all reader and writers took 118 milliseconds
+Script Module: Unity.Mathematics.dll
+Weave behaviours and messages took165 milliseconds
+Find all reader and writers took 121 milliseconds
+Script Module: Unity.InputSystem.dll
+Weave behaviours and messages took178 milliseconds
+Find all reader and writers took 115 milliseconds
+Script Module: SimpleWebTransport.dll
+Weave behaviours and messages took5 milliseconds
+Find all reader and writers took 118 milliseconds
+Script Module: Unity.VisualScripting.State.dll
+Weave behaviours and messages took4 milliseconds
+Find all reader and writers took 120 milliseconds
+Script Module: Unity.VisualScripting.Core.dll
+Weave behaviours and messages took132 milliseconds
+Find all reader and writers took 118 milliseconds
+Script Module: Unity.VisualScripting.Flow.dll
+Weave behaviours and messages took76 milliseconds
+Find all reader and writers took 114 milliseconds
+Script Module: Unity.2D.Animation.Runtime.dll
+Weave behaviours and messages took5 milliseconds
+Find all reader and writers took 132 milliseconds
+Script Module: Unity.TextMeshPro.dll
+Weave behaviours and messages took78 milliseconds
+Find all reader and writers took 108 milliseconds
+Script Module: Unity.Timeline.dll
+Weave behaviours and messages took24 milliseconds
+Find all reader and writers took 116 milliseconds
+Script Module: Telepathy.dll
+Weave behaviours and messages took2 milliseconds
+Find all reader and writers took 116 milliseconds
+Script Module: Unity.2D.SpriteShape.Runtime.dll
+Weave behaviours and messages took21 milliseconds
+Find all reader and writers took 105 milliseconds
+Script Module: Unity.2D.Animation.Triangle.Runtime.dll
+Weave behaviours and messages took51 milliseconds
+Find all reader and writers took 103 milliseconds
+Script Module: Unity.2D.PixelPerfect.dll
+Weave behaviours and messages took1 milliseconds
+Find all reader and writers took 114 milliseconds
+Script Module: Sirenix.OdinInspector.CompatibilityLayer.dll
+Weave behaviours and messages took0 milliseconds
+Find all reader and writers took 109 milliseconds
+Script Module: Mirror.Cloud.dll
+Weave behaviours and messages took3 milliseconds
+Find all reader and writers took 113 milliseconds
+Script Module: Unity.2D.IK.Runtime.dll
+Weave behaviours and messages took3 milliseconds
+Find all reader and writers took 98 milliseconds
+Script Module: kcp2k.dll
+Weave behaviours and messages took3 milliseconds
+Find all reader and writers took 113 milliseconds
+Script Module: Mirror.Examples.Cloud.GUI.dll
+Weave behaviours and messages took2 milliseconds
+Find all reader and writers took 113 milliseconds
+Script Module: Unity.2D.Common.Runtime.dll
+Weave behaviours and messages took0 milliseconds
+Find all reader and writers took 100 milliseconds
+Script Module: Unity.InternalAPIEngineBridge.001.dll
+Weave behaviours and messages took0 milliseconds
+Find all reader and writers took 139 milliseconds
+Script Module: VSSettingsProvider.dll
+Weave behaviours and messages took1 milliseconds
+Find all reader and writers took 154 milliseconds
+Script Module: UnityEditor.TestRunner.dll
+Weave behaviours and messages took32 milliseconds
+Find all reader and writers took 151 milliseconds
+Script Module: ParrelSync.dll
+Weave behaviours and messages took2 milliseconds
+Find all reader and writers took 108 milliseconds
+Script Module: PsdPlugin.dll
+Weave behaviours and messages took25 milliseconds
+Find all reader and writers took 118 milliseconds
+Script Module: Mirror.CompilerSymbols.dll
+Weave behaviours and messages took0 milliseconds
+Find all reader and writers took 137 milliseconds
+Script Module: UnityEditor.UI.dll
+Weave behaviours and messages took9 milliseconds
+Find all reader and writers took 131 milliseconds
+Script Module: Unity.InternalAPIEditorBridge.001.dll
+Weave behaviours and messages took3 milliseconds
+Find all reader and writers took 126 milliseconds
+Script Module: Sirenix.OdinInspector.Modules.UnityMathematics.dll
+Weave behaviours and messages took4 milliseconds
+Mono: successfully reloaded assembly
+- Completed reload, in 13.538 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.09 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3997 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.2 MB.
+System memory in use after: 151.3 MB.
+
+Unloading 46 unused Assets to reduce memory usage. Loaded Objects now: 4494.
+Total: 29.928000 ms (FindLiveObjects: 0.420200 ms CreateObjectMapping: 0.118700 ms MarkObjects: 29.198500 ms  DeleteObjects: 0.188400 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Sprites/Tilemaps/Town/Minifantasy_TownsAllTiles.png
+  artifactKey: Guid(07903e74c06eb8c4ca02bee5f7f7a276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Tilemaps/Town/Minifantasy_TownsAllTiles.png using Guid(07903e74c06eb8c4ca02bee5f7f7a276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fd9251d66dc90597069bbfbe2e7a834') in 0.198232 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Sprites/Tilemaps/Town/Minifantasy_TownsAllTilesShadows.png
+  artifactKey: Guid(cdd322199a7f4e8428ed0e0104a4a05e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Tilemaps/Town/Minifantasy_TownsAllTilesShadows.png using Guid(cdd322199a7f4e8428ed0e0104a4a05e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a86494734282afa71b56f07a7601ef2') in 0.070275 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.662821 seconds.
+  path: Assets/Sprites/Tilemaps/Town/Minifantasy_TownsAllTiles.png
+  artifactKey: Guid(07903e74c06eb8c4ca02bee5f7f7a276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Tilemaps/Town/Minifantasy_TownsAllTiles.png using Guid(07903e74c06eb8c4ca02bee5f7f7a276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aed1ac920501c8a6f6f1d0526551b384') in 1.518191 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.318897 seconds.
+  path: Assets/Sprites/Tilemaps/Town/Minifantasy_TownsProps.png
+  artifactKey: Guid(d126a8c965ef721479e32484c317a9c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Tilemaps/Town/Minifantasy_TownsProps.png using Guid(d126a8c965ef721479e32484c317a9c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beac55cc3e08754a9d9b22d674fc1c08') in 0.018853 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.941450 seconds.
+  path: Assets/Sprites/Tilemaps/Town/Minifantasy_TownsProps.png
+  artifactKey: Guid(d126a8c965ef721479e32484c317a9c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Tilemaps/Town/Minifantasy_TownsProps.png using Guid(d126a8c965ef721479e32484c317a9c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '387844321f6771088ecdf97a2494caec') in 0.071813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.454552 seconds.
+  path: Assets/Sprites/Tilemaps/Town/Minifantasy_TownsProps.png
+  artifactKey: Guid(d126a8c965ef721479e32484c317a9c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Tilemaps/Town/Minifantasy_TownsProps.png using Guid(d126a8c965ef721479e32484c317a9c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47cb49d6df33224af77adf64ea18b7f9') in 0.762343 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 124.869529 seconds.
+  path: Assets/Tilemaps
+  artifactKey: Guid(5ffc2a1931bf1884494ad48af6181102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps using Guid(5ffc2a1931bf1884494ad48af6181102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88c11109315048228feb3faf39f6ff48') in 0.007590 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.887551 seconds.
+  path: Assets/Tilemaps/Town
+  artifactKey: Guid(8ddada68ea207b6439fc7241845f3912) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/Town using Guid(8ddada68ea207b6439fc7241845f3912) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '900f4bdbc84fd425696373d535ab2b4f') in 0.008260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.663789 seconds.
+  path: Assets/Tilemaps/ForgottenPlains
+  artifactKey: Guid(598163b36a1a6d74c8fe867184350cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains using Guid(598163b36a1a6d74c8fe867184350cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '117be316b55a1be01c1fa99cc69a1d93') in 0.007924 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.047746 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_0.asset
+  artifactKey: Guid(4b34c675b5f050f4b95a58118af9a293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_0.asset using Guid(4b34c675b5f050f4b95a58118af9a293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60895cf079d55a42508745c98600df51') in 0.028526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_65.asset
+  artifactKey: Guid(3c78191be314d5b49aa64103da6fed21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_65.asset using Guid(3c78191be314d5b49aa64103da6fed21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53b57053017b3031fc3105543929f3d6') in 0.010834 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_158.asset
+  artifactKey: Guid(64bba92c83bdf1e428935eaa66832e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_158.asset using Guid(64bba92c83bdf1e428935eaa66832e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6d83604fa08766877cbbce46ee069c6') in 0.019199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_17.asset
+  artifactKey: Guid(9180961ed9295bb44a25d180afda20a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_17.asset using Guid(9180961ed9295bb44a25d180afda20a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73c2fccebd7831bc780df3fb17188999') in 0.011100 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_100.asset
+  artifactKey: Guid(3eb6b488f5b466d4fa853f3bc67f03fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_100.asset using Guid(3eb6b488f5b466d4fa853f3bc67f03fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '392b4543694d1658a4685495e681436d') in 0.011041 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_21.asset
+  artifactKey: Guid(9fa113a8aa30cd94a89532fd2674edb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_21.asset using Guid(9fa113a8aa30cd94a89532fd2674edb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0cb7cb05427ba70dfebfcd7c6cd5a7c') in 0.014811 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_157.asset
+  artifactKey: Guid(8ca44fab5d0d7624db968fea4bbc644a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_157.asset using Guid(8ca44fab5d0d7624db968fea4bbc644a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0135f0732a94e5442a7bc430e2d040d4') in 0.011047 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_150.asset
+  artifactKey: Guid(5a684c301ee7d524da7e69edc85dec96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_150.asset using Guid(5a684c301ee7d524da7e69edc85dec96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc8a169235235b66747f82208b9ecd48') in 0.011293 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000420 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_36.asset
+  artifactKey: Guid(28055494536713b428cc53bfa5588214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_36.asset using Guid(28055494536713b428cc53bfa5588214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4bc8f7a933cc68e4bfef9b78e74cc8d') in 0.012409 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_161.asset
+  artifactKey: Guid(562bb0f1c2d083546b539ec1476d914c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_161.asset using Guid(562bb0f1c2d083546b539ec1476d914c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '308576b69e7e16dd76e55f906eea96a6') in 0.011076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_37.asset
+  artifactKey: Guid(b4072f67b1f5dc649bf8178e6f6d1048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_37.asset using Guid(b4072f67b1f5dc649bf8178e6f6d1048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb522e54890be01584fdedcc1cf74136') in 0.013232 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_53.asset
+  artifactKey: Guid(1dbea2fb67b3d5c4f942c5a3d3b1618e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_53.asset using Guid(1dbea2fb67b3d5c4f942c5a3d3b1618e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82d67e674b3a89dc8eda100d9a6d5da7') in 0.011398 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_90.asset
+  artifactKey: Guid(e9b55c0144119374e957ebe7728e4c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_90.asset using Guid(e9b55c0144119374e957ebe7728e4c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c5d6605e0de0e40a60a25d31c62cfef') in 0.012794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_56.asset
+  artifactKey: Guid(0355a115093d3564197b7b2ad3a5e710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_56.asset using Guid(0355a115093d3564197b7b2ad3a5e710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '182f65f22519f13ec2fb9c8bb9f3c59c') in 0.010429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_121.asset
+  artifactKey: Guid(fbf70ed09a5b6ff41b6e93e8cbc56312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_121.asset using Guid(fbf70ed09a5b6ff41b6e93e8cbc56312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46551f1b3342d66b1504ff6e6817d8eb') in 0.011013 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_32.asset
+  artifactKey: Guid(370a36c394bf16e4aa5842a052750a30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_32.asset using Guid(370a36c394bf16e4aa5842a052750a30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07574bc5bbff4c0864afb937e388456b') in 0.013315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_115.asset
+  artifactKey: Guid(5c65e207735c16d46bcd4dbc6719ee60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_115.asset using Guid(5c65e207735c16d46bcd4dbc6719ee60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '992cfee37324b85b5dbc616c49b64d13') in 0.012061 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_97.asset
+  artifactKey: Guid(c683c99b4d95b30448dec3f1af4b5c4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_97.asset using Guid(c683c99b4d95b30448dec3f1af4b5c4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40278347ef1a5d0a7c620446dd16f31a') in 0.012345 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_67.asset
+  artifactKey: Guid(44e3da994655cbe488f81b06528d2677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_67.asset using Guid(44e3da994655cbe488f81b06528d2677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfd3c19ac3064cef8468b598d7e33182') in 0.012560 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_69.asset
+  artifactKey: Guid(57ac9bcc71b338247854befed2d32f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_69.asset using Guid(57ac9bcc71b338247854befed2d32f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce7e9446296fa6a96274818226916455') in 0.016756 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_75.asset
+  artifactKey: Guid(6f9ab078b1f8b6041b8a7d7bdbab9926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_75.asset using Guid(6f9ab078b1f8b6041b8a7d7bdbab9926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '032d779602c76492f81a289ac57b98c3') in 0.010739 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_156.asset
+  artifactKey: Guid(1fb8c37a8f7bc5d488df84d8e988fdf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_156.asset using Guid(1fb8c37a8f7bc5d488df84d8e988fdf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a63706c84c328d4b612271265b9f1f9') in 0.013309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_89.asset
+  artifactKey: Guid(93088d6efaa9f724096452871ffa77d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_89.asset using Guid(93088d6efaa9f724096452871ffa77d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25ef55cdd582a734494b2f7afc70223a') in 0.010619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_76.asset
+  artifactKey: Guid(1376930517293264abab34204cc4878b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_76.asset using Guid(1376930517293264abab34204cc4878b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4271fa7bdce6879f88df81944fc2554f') in 0.015385 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_34.asset
+  artifactKey: Guid(ce8c0e1c29a96db49b7cee2721167d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_34.asset using Guid(ce8c0e1c29a96db49b7cee2721167d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '347ca5bc82154ebad7566180d9bb856c') in 0.010531 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_33.asset
+  artifactKey: Guid(f54fa126f4cc23b4ca4553378f800221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_33.asset using Guid(f54fa126f4cc23b4ca4553378f800221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4663d858592970db9ac486028e3cb5ed') in 0.011093 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_83.asset
+  artifactKey: Guid(589dde7fbf1ee084281df9bb586718ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_83.asset using Guid(589dde7fbf1ee084281df9bb586718ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86ff1129c825f3b36474b2f81b67f4c8') in 0.010790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_132.asset
+  artifactKey: Guid(d6685f28fb210e54880468fc1bec459f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_132.asset using Guid(d6685f28fb210e54880468fc1bec459f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0492a698981f774f23cc3ec5c5e3ac00') in 0.010611 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_141.asset
+  artifactKey: Guid(59b85848248759d41b321dd6143dc56f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_141.asset using Guid(59b85848248759d41b321dd6143dc56f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aa1204543dbe1afe8caec9403e87fcf') in 0.016084 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_147.asset
+  artifactKey: Guid(cb6eab18c92db1648a903ef68432a00d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_147.asset using Guid(cb6eab18c92db1648a903ef68432a00d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '503f8ef39396bae3957dac69b1640877') in 0.009941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_61.asset
+  artifactKey: Guid(55b9e7e19b3c3fa41a27559565b64a59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_61.asset using Guid(55b9e7e19b3c3fa41a27559565b64a59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '004cac747b169df361c8ac5ef45ffb41') in 0.013332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_169.asset
+  artifactKey: Guid(7bf1645d04655904cad592d79340813c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_169.asset using Guid(7bf1645d04655904cad592d79340813c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2e1200d4fc60a7e6423477546d10a9b') in 0.011474 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_108.asset
+  artifactKey: Guid(5e201d1b8c112cb438b8d365ee3a46ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_108.asset using Guid(5e201d1b8c112cb438b8d365ee3a46ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c33eb1ff4ca5a9ff5441781638bbe231') in 0.010101 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_173.asset
+  artifactKey: Guid(417ea4f4addfa7442947b73197137295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_173.asset using Guid(417ea4f4addfa7442947b73197137295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2edbd99f1c829db8ca90e0353664b8d') in 0.018766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_124.asset
+  artifactKey: Guid(271bcddb6e86a8d4bac4705350e5ec03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_124.asset using Guid(271bcddb6e86a8d4bac4705350e5ec03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c60485d5d9da9021ce2429a39b745c54') in 0.010339 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_143.asset
+  artifactKey: Guid(420d6067759f442449ff317f2137bb29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_143.asset using Guid(420d6067759f442449ff317f2137bb29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01c989561d47f151d9d257c241a52b4c') in 0.011528 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_111.asset
+  artifactKey: Guid(e6a0fdadc63b81246860d659c197e95f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_111.asset using Guid(e6a0fdadc63b81246860d659c197e95f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aae9d7cdb50df49d3d00d7fafad499f') in 0.010860 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_166.asset
+  artifactKey: Guid(e549c6678ee13fb489406f41a316c1d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_166.asset using Guid(e549c6678ee13fb489406f41a316c1d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74475a47307f1c416522541b26c627d3') in 0.010717 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_182.asset
+  artifactKey: Guid(02a8ce3f8b0c01840a65e203820fbe60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_182.asset using Guid(02a8ce3f8b0c01840a65e203820fbe60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d0c63f3d24c7a72e263cfd129e418cf') in 0.012412 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_96.asset
+  artifactKey: Guid(1a6abf32faedb0a4ab6747d198c00727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_96.asset using Guid(1a6abf32faedb0a4ab6747d198c00727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a9d819c28b310d90268c1e45961c7b1') in 0.011056 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_91.asset
+  artifactKey: Guid(cd4d0d228a00ae047b86ef7c0920387a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_91.asset using Guid(cd4d0d228a00ae047b86ef7c0920387a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b8a19f58cc86094dbce6631e8d97bf6') in 0.012667 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_180.asset
+  artifactKey: Guid(83606c54fceed7c429d443e9a512de8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_180.asset using Guid(83606c54fceed7c429d443e9a512de8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da993f11d82c8bd9d8e9e8d68419c6f2') in 0.011602 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_50.asset
+  artifactKey: Guid(48d4d9af5f11b6f46a767692a7b34999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_50.asset using Guid(48d4d9af5f11b6f46a767692a7b34999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c7a81382b57ac395e30d95b628ca0a6') in 0.010010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_4.asset
+  artifactKey: Guid(fc79d121312916b42a21a67ba798ba35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_4.asset using Guid(fc79d121312916b42a21a67ba798ba35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '162a360bd5a2c3dc6b3f88744b34b24a') in 0.012653 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_129.asset
+  artifactKey: Guid(095dfc0bd2f27464ea28b89c2ab86758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_129.asset using Guid(095dfc0bd2f27464ea28b89c2ab86758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02ec2199b3b48d58d47b16ff84d1ffce') in 0.012459 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_6.asset
+  artifactKey: Guid(91e58298489b50049a71df945fa8ea0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_6.asset using Guid(91e58298489b50049a71df945fa8ea0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '949c042901e7c3dfc4fee718d87aa450') in 0.011197 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_18.asset
+  artifactKey: Guid(4c096aba9f21d744d8d569691b7feb8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_18.asset using Guid(4c096aba9f21d744d8d569691b7feb8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cde2449a479b92edfba99ef33c29034b') in 0.010506 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_126.asset
+  artifactKey: Guid(3fe8b156b2deefa48b5cef245f5bc9c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_126.asset using Guid(3fe8b156b2deefa48b5cef245f5bc9c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f6ef6723b35bef007ef9b52d5449a3b') in 0.010967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_54.asset
+  artifactKey: Guid(159f311ea3c3c424bbb42db49dd95f65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_54.asset using Guid(159f311ea3c3c424bbb42db49dd95f65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fed1645e8c53ae9c3a2d54763b6f61ab') in 0.013239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_93.asset
+  artifactKey: Guid(d1064631ba186f842a856c0233691954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_93.asset using Guid(d1064631ba186f842a856c0233691954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52c649b2cf2fb6e9d0b377f43fbc5852') in 0.011015 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_120.asset
+  artifactKey: Guid(749bef23495604b48a1f03d49b54102b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_120.asset using Guid(749bef23495604b48a1f03d49b54102b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a29319f031b7d3a1e58cdd8783b90fe2') in 0.013234 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_78.asset
+  artifactKey: Guid(2b04d5c80d2037e4fad26725e2329722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_78.asset using Guid(2b04d5c80d2037e4fad26725e2329722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fbf8acff504bd11cb2a2521d928f7e8') in 0.009868 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_134.asset
+  artifactKey: Guid(3397b76b1657fea41acce30ac99340a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_134.asset using Guid(3397b76b1657fea41acce30ac99340a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7b458d9eb0ac760ab5545f7746ab2bb') in 0.010792 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_112.asset
+  artifactKey: Guid(282c43ddb443bba43b2b4d5cb3d7fbfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_112.asset using Guid(282c43ddb443bba43b2b4d5cb3d7fbfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3e3b37bc408332de4476a8ce3be6635') in 0.011322 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_137.asset
+  artifactKey: Guid(f88d09be6e7565e47b80fca38706cef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_137.asset using Guid(f88d09be6e7565e47b80fca38706cef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e638912c233a2c094b6c361b91bf84e2') in 0.011200 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_116.asset
+  artifactKey: Guid(4eaf4817185e04144bcfe21eed869af3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_116.asset using Guid(4eaf4817185e04144bcfe21eed869af3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7be29fd9f824d7c33ddd500e6749008') in 0.015466 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_8.asset
+  artifactKey: Guid(915fe5517e5d66345bf39f7d0501f96c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_8.asset using Guid(915fe5517e5d66345bf39f7d0501f96c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b619e15e34ea776a80ce8c5c548258c9') in 0.013173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_159.asset
+  artifactKey: Guid(441ad88e8225bbf4290355b46398c74f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_159.asset using Guid(441ad88e8225bbf4290355b46398c74f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c9113e4555a5f651520232167fb590b') in 0.011635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_52.asset
+  artifactKey: Guid(ec28a09d591aeae4d9ff777e85b54b59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_52.asset using Guid(ec28a09d591aeae4d9ff777e85b54b59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '774c8b2b6441d06d823ab74af859f898') in 0.010415 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_20.asset
+  artifactKey: Guid(1660e96afa43c0344a05e6f6e717aabd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_20.asset using Guid(1660e96afa43c0344a05e6f6e717aabd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec24e4581f10b176cc79d6ee12f914cf') in 0.011716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_74.asset
+  artifactKey: Guid(8750f6277c200de4bb5e3f3dfc936e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_74.asset using Guid(8750f6277c200de4bb5e3f3dfc936e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b9f721013be2b55fad439cc47b8a0bc') in 0.011260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_109.asset
+  artifactKey: Guid(83a3997115dd3f841a04f446c9252637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_109.asset using Guid(83a3997115dd3f841a04f446c9252637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7285f2580342da4eeea1f7d816cf48c') in 0.015175 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000460 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_165.asset
+  artifactKey: Guid(1d0cdf9b69e54aa4980b7212e58add6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_165.asset using Guid(1d0cdf9b69e54aa4980b7212e58add6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a8f2404ef9aed381ae94ceed375e651') in 0.011572 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_154.asset
+  artifactKey: Guid(8381be8f1c5fce142bd6a2ebb903bd31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_154.asset using Guid(8381be8f1c5fce142bd6a2ebb903bd31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '919ab7ff0f1fcb644ff04a9ca02f0991') in 0.012476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_135.asset
+  artifactKey: Guid(4a0439cb3c45a0e41bb2b55a3512de18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_135.asset using Guid(4a0439cb3c45a0e41bb2b55a3512de18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b89b6003a992399fa8b8f41a36e27efc') in 0.011570 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_12.asset
+  artifactKey: Guid(b97d5895389ca954f8383ba50fd1a6e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_12.asset using Guid(b97d5895389ca954f8383ba50fd1a6e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d46717b1a017e5f334036a5e1838f15') in 0.011471 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_122.asset
+  artifactKey: Guid(edef26b404c47254783c478901b6a13d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_122.asset using Guid(edef26b404c47254783c478901b6a13d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ce51c2e90760583c6b902adf4060abd') in 0.013968 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_104.asset
+  artifactKey: Guid(f1e9c60691e43d84d90a5a4ccbf70023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_104.asset using Guid(f1e9c60691e43d84d90a5a4ccbf70023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7004b8ae63198f95a86127052e52a528') in 0.011170 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_170.asset
+  artifactKey: Guid(8f44114b78847a841a6fa49f1aca5ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_170.asset using Guid(8f44114b78847a841a6fa49f1aca5ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0169a02d0c6541eb44b956d3b91f0dc7') in 0.011614 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_26.asset
+  artifactKey: Guid(23ac7829d19dec3418340d3613012748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_26.asset using Guid(23ac7829d19dec3418340d3613012748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aad96f265e1d316a89c9794042059859') in 0.011321 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_38.asset
+  artifactKey: Guid(1dbfa767f0757344aa7f56da5f0253a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_38.asset using Guid(1dbfa767f0757344aa7f56da5f0253a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe4772322c73a8ac0a4bcce5851d3b6f') in 0.013306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_152.asset
+  artifactKey: Guid(5cc16d524fddcec4594ebb6a655c567f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_152.asset using Guid(5cc16d524fddcec4594ebb6a655c567f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17aa949e5a007a15bc3b8a4637742c63') in 0.014591 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_22.asset
+  artifactKey: Guid(3887fb8fb4ebf7149a14e2fcb5550a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_22.asset using Guid(3887fb8fb4ebf7149a14e2fcb5550a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66bfa25656cb9dcee12ae35dd6885ed3') in 0.016083 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_106.asset
+  artifactKey: Guid(55ca2cb7d9837b04f80a553a650c1b68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_106.asset using Guid(55ca2cb7d9837b04f80a553a650c1b68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d5b479b28debf3af2f3cde29fefaaf0') in 0.011098 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_85.asset
+  artifactKey: Guid(013b57cc07c2f2e40827efc3ab7a2f76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_85.asset using Guid(013b57cc07c2f2e40827efc3ab7a2f76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a35fb39c4ab936c11c6cb98cac3d201b') in 0.010583 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_73.asset
+  artifactKey: Guid(6d4b5fef76b90584abab164955d4c05e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_73.asset using Guid(6d4b5fef76b90584abab164955d4c05e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16e82a80f6ccfbe4b50d10cb3acb4df8') in 0.010668 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_149.asset
+  artifactKey: Guid(2fab0ec96808aa2478e46da4c0f9f18b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_149.asset using Guid(2fab0ec96808aa2478e46da4c0f9f18b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71ba34ee5997bfa71e72d50a11755c51') in 0.011326 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_47.asset
+  artifactKey: Guid(e7b4df7bcfc5ca94288b78bcb0d1a0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_47.asset using Guid(e7b4df7bcfc5ca94288b78bcb0d1a0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45b11bf3c368ede6397217c6ee6a16de') in 0.010186 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_87.asset
+  artifactKey: Guid(66170d086f2967d43bac57447a1aecf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_87.asset using Guid(66170d086f2967d43bac57447a1aecf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2829b40607d9fadd3766db735b755988') in 0.010715 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_1.asset
+  artifactKey: Guid(5eb09c32d7d40684f90c5e28a4fe0470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_1.asset using Guid(5eb09c32d7d40684f90c5e28a4fe0470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '359294254d881b80e354965e77167199') in 0.011745 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_15.asset
+  artifactKey: Guid(f51563976f01e0c4f8b43e045093deda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_15.asset using Guid(f51563976f01e0c4f8b43e045093deda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10e20cc3dc865a5ee15d791fdf50cad3') in 0.010957 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_77.asset
+  artifactKey: Guid(4e2cbab67d54ffd459d00b06fb016a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_77.asset using Guid(4e2cbab67d54ffd459d00b06fb016a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '554747474bda43a5f749f70b6043464d') in 0.010802 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_48.asset
+  artifactKey: Guid(fe46e20ceae02b245909e0936f60e1c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_48.asset using Guid(fe46e20ceae02b245909e0936f60e1c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b3319dd1d8d2c611eb19b7cc4275bde') in 0.011028 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_101.asset
+  artifactKey: Guid(5f99da3e41af47843bb158c6b12ca115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_101.asset using Guid(5f99da3e41af47843bb158c6b12ca115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f533f27e75c88579decd2ad2fb0b29b') in 0.010988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_27.asset
+  artifactKey: Guid(a4b1f14304ea351489a796cb1ecd0dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_27.asset using Guid(a4b1f14304ea351489a796cb1ecd0dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6768757b7e1ae97f499ea667f214d846') in 0.011017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_71.asset
+  artifactKey: Guid(43a25aee88c861f4393bea2df56bb5c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_71.asset using Guid(43a25aee88c861f4393bea2df56bb5c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7b2804c12424c50b6dcdda68a121b75') in 0.012432 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_44.asset
+  artifactKey: Guid(735440d3d97b082468f23391953f0457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_44.asset using Guid(735440d3d97b082468f23391953f0457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5d53a969316e19ed2b5f4016fd1132e') in 0.011119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_164.asset
+  artifactKey: Guid(91efb7ac13ae1f847a4be587b8de7916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_164.asset using Guid(91efb7ac13ae1f847a4be587b8de7916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '202993db7f1426e642a324adc8d0e8bd') in 0.011747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_14.asset
+  artifactKey: Guid(a860234cb10865d4692c6f799f992215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_14.asset using Guid(a860234cb10865d4692c6f799f992215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adb41a4734e792bdb2fc580d74c6576f') in 0.010249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_151.asset
+  artifactKey: Guid(0151a8345f73fde458110d3d80972407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_151.asset using Guid(0151a8345f73fde458110d3d80972407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daab6446022ce43f3adc1695e317d807') in 0.009884 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_11.asset
+  artifactKey: Guid(63693f06cc28d1646ae2d8a2b5d71454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_11.asset using Guid(63693f06cc28d1646ae2d8a2b5d71454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e4156c37ce6028289c9191d80fc855e') in 0.011239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_86.asset
+  artifactKey: Guid(2cc4462c3f9ba6941bbee1e935c3f47b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_86.asset using Guid(2cc4462c3f9ba6941bbee1e935c3f47b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa8a97dbfd1a6255b4eaf6b022012efa') in 0.010846 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_138.asset
+  artifactKey: Guid(de6b4966f91c7874984df3c008006147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_138.asset using Guid(de6b4966f91c7874984df3c008006147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59259c69b07d238fc1488600b25829b4') in 0.010914 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_179.asset
+  artifactKey: Guid(8e9c8ce0757a5d542aa55456f59b06b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_179.asset using Guid(8e9c8ce0757a5d542aa55456f59b06b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32c1dc8b6c9a06a3c396548d30195ab4') in 0.011117 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_155.asset
+  artifactKey: Guid(367397dc492da6d479db7239d030834f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_155.asset using Guid(367397dc492da6d479db7239d030834f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7595837142f7573d825b0ecdedb7331c') in 0.011106 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_88.asset
+  artifactKey: Guid(f13ad6bae33708a4cb599bb43f8168b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_88.asset using Guid(f13ad6bae33708a4cb599bb43f8168b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48e3adda2c0e177d8270c8f60f6c7b20') in 0.010723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_57.asset
+  artifactKey: Guid(7af9a1207473eae478d8bf8f6d9bb900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_57.asset using Guid(7af9a1207473eae478d8bf8f6d9bb900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd8acce78a21af78e52fa6cb1adf8f42') in 0.010460 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_146.asset
+  artifactKey: Guid(8c9bcce5c6226144f8751ecc3822649b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_146.asset using Guid(8c9bcce5c6226144f8751ecc3822649b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ce266e4d1bffdf3e4ea734384742f0f') in 0.011285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_60.asset
+  artifactKey: Guid(ada820fdff83999448c9a1b5e9832387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_60.asset using Guid(ada820fdff83999448c9a1b5e9832387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6077f61d1c55243be1154c77629f3156') in 0.010461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_82.asset
+  artifactKey: Guid(fdd1156db39e983459a145b1d6b91edf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_82.asset using Guid(fdd1156db39e983459a145b1d6b91edf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0634549daad9896fd7d760590183c96') in 0.010905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_130.asset
+  artifactKey: Guid(3aafe503bfa4a874db03f09c6f47b2c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_130.asset using Guid(3aafe503bfa4a874db03f09c6f47b2c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28ff04a287b9a749cd2e600ca7433f5e') in 0.012086 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_172.asset
+  artifactKey: Guid(318da65e26873e04f9f1a5f5e93582cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_172.asset using Guid(318da65e26873e04f9f1a5f5e93582cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ae16b959f5a4a051bb0e13a04eb035d') in 0.011909 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_139.asset
+  artifactKey: Guid(8449d1645541f744d92e225f740dbeb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_139.asset using Guid(8449d1645541f744d92e225f740dbeb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00ac436c78d7132b5ce1e30675344f4d') in 0.010431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_41.asset
+  artifactKey: Guid(cb1abffb29ee8a34183380f0c125e628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_41.asset using Guid(cb1abffb29ee8a34183380f0c125e628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32ce77c3ba8fcd3f8a6b3d681ee674ea') in 0.011170 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_66.asset
+  artifactKey: Guid(1723e22f3779a594c8d30e8766bcf6ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_66.asset using Guid(1723e22f3779a594c8d30e8766bcf6ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49e198262cdd9346889e391d65761d61') in 0.011288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_81.asset
+  artifactKey: Guid(6eed718d468f39246bcf17a35004b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_81.asset using Guid(6eed718d468f39246bcf17a35004b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a59a695dfa1093528fe27ac6a792acf') in 0.010723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_113.asset
+  artifactKey: Guid(9ad68999c8f42e847a1e7cde890a8002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_113.asset using Guid(9ad68999c8f42e847a1e7cde890a8002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '012d704cd2dd599900af336bac1befb4') in 0.011508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_114.asset
+  artifactKey: Guid(cd85f70054a6f8b49bec3ac4d6ede3f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_114.asset using Guid(cd85f70054a6f8b49bec3ac4d6ede3f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fc44c30f59cb8d8b6230e84c69f194f') in 0.011290 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_142.asset
+  artifactKey: Guid(7d36125732bccd140a13c10aa0a8619f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_142.asset using Guid(7d36125732bccd140a13c10aa0a8619f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e3addbdefc09b3bfa47954cbb0cbed0') in 0.010819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_118.asset
+  artifactKey: Guid(137445a5cc27eae429b1fbbd0772e0a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_118.asset using Guid(137445a5cc27eae429b1fbbd0772e0a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e01d200893f9ebc62264e902b8ae5eb') in 0.011544 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_174.asset
+  artifactKey: Guid(1c703818c2f03364088a4a6aaea25521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_174.asset using Guid(1c703818c2f03364088a4a6aaea25521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96dfaaca4df26cea41de3bec4a220b7c') in 0.010386 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_153.asset
+  artifactKey: Guid(c2582347bbaa6d14f9c51fd92ce8fa76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_153.asset using Guid(c2582347bbaa6d14f9c51fd92ce8fa76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20f69d9bd5cfe8995b38d7c577f613d8') in 0.011308 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_7.asset
+  artifactKey: Guid(461dafe774d4c474884e5eb2ad1363e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_7.asset using Guid(461dafe774d4c474884e5eb2ad1363e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9f6e0a3fe6ee794fa9a5902caecd8b2') in 0.011284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_25.asset
+  artifactKey: Guid(19b0cf9f37aaf844db10a4cac229efe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_25.asset using Guid(19b0cf9f37aaf844db10a4cac229efe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99c26a1c855ae40bd3350016465af28a') in 0.011360 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_178.asset
+  artifactKey: Guid(f075e238aaf7f694a8c84de8da048b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_178.asset using Guid(f075e238aaf7f694a8c84de8da048b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '537d2309d41c942579deadaaa2f86ea2') in 0.010452 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_125.asset
+  artifactKey: Guid(1895e85828b91b7418e715215d288eab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_125.asset using Guid(1895e85828b91b7418e715215d288eab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b44187515f65625862b1f0361a545334') in 0.011888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_5.asset
+  artifactKey: Guid(1708afa927321cb4586a70a9d467b9c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_5.asset using Guid(1708afa927321cb4586a70a9d467b9c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '772a3ec8938c78d26631476cdfe14920') in 0.011070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_181.asset
+  artifactKey: Guid(a20da61714dbb644ba4133824fd498a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_181.asset using Guid(a20da61714dbb644ba4133824fd498a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60ace3f78784f839e20badb490fce556') in 0.011014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_144.asset
+  artifactKey: Guid(3ac1ea647df0b4141828201c42cd7bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_144.asset using Guid(3ac1ea647df0b4141828201c42cd7bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '300637c9275a28c2a92dd4a75b3b7e71') in 0.010832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_162.asset
+  artifactKey: Guid(4779fc5529f5cf14080505b16130694e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_162.asset using Guid(4779fc5529f5cf14080505b16130694e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d3140e44a010ab58dbdd966a7884438') in 0.011886 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_9.asset
+  artifactKey: Guid(5b32a184e3837e348ac9176fcc7bfdd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_9.asset using Guid(5b32a184e3837e348ac9176fcc7bfdd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41db425998516312ba4abe7e3f18673a') in 0.011311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_133.asset
+  artifactKey: Guid(1047534ae9101af4791327bfdc7b7c0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_133.asset using Guid(1047534ae9101af4791327bfdc7b7c0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf321d3061e0eae553e361db17e4e7fe') in 0.009999 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_64.asset
+  artifactKey: Guid(7ff3e73cadfa907418b4a146cb614da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_64.asset using Guid(7ff3e73cadfa907418b4a146cb614da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74427653f5a6de0cc7f43c160a39b77e') in 0.013790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_72.asset
+  artifactKey: Guid(6d9a0ede058a7db4eb24600828815f22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_72.asset using Guid(6d9a0ede058a7db4eb24600828815f22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc35f129bef42ffca30ce3d34ab0980e') in 0.011608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_95.asset
+  artifactKey: Guid(96c17ec1548a5924394a2618f26216ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_95.asset using Guid(96c17ec1548a5924394a2618f26216ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ed550e9e5aa278d0c21be457672dd85') in 0.009846 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_136.asset
+  artifactKey: Guid(3cb62ff5d0a59e64c83132cf8f824291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_136.asset using Guid(3cb62ff5d0a59e64c83132cf8f824291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b9046e1e57483d8bae8fd1dcf5a931b') in 0.011928 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_13.asset
+  artifactKey: Guid(bf7640e658779dd498db29d910ef3294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_13.asset using Guid(bf7640e658779dd498db29d910ef3294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c3a1d0e4595e19e3114b8e589a5e56b') in 0.011062 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_40.asset
+  artifactKey: Guid(14ae0f9c328291044bf81fd2db4626e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_40.asset using Guid(14ae0f9c328291044bf81fd2db4626e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17b786d3371148b87193d84be598dc1b') in 0.012270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_110.asset
+  artifactKey: Guid(d71e460546339e24a9bce88674e6dd86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_110.asset using Guid(d71e460546339e24a9bce88674e6dd86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59e205b78e7a7dde24212d42aa4e98dc') in 0.010746 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_123.asset
+  artifactKey: Guid(f5753cc7e2b307f4ba21290e0a66e364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_123.asset using Guid(f5753cc7e2b307f4ba21290e0a66e364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c481e4e5f7526ed63941229c12faa8c') in 0.010705 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_39.asset
+  artifactKey: Guid(f826d91658862b64998986e52d8ebb90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_39.asset using Guid(f826d91658862b64998986e52d8ebb90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa092530286902319a68d38e4241e31f') in 0.011777 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_51.asset
+  artifactKey: Guid(3fe64affca023864ca6c47fbe8469328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_51.asset using Guid(3fe64affca023864ca6c47fbe8469328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29ff4ec197d1acd7b1b9d54ff577b308') in 0.012401 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_140.asset
+  artifactKey: Guid(0c766e8c21c3389428f6317290113062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_140.asset using Guid(0c766e8c21c3389428f6317290113062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b16254046284a5edc5c438dd61299fa') in 0.013093 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_128.asset
+  artifactKey: Guid(839e97f36c153e2438708a97aeecb504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_128.asset using Guid(839e97f36c153e2438708a97aeecb504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78e15e5fecd10c7d43be3f3f81bc75f3') in 0.010491 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_45.asset
+  artifactKey: Guid(d88064601e7313549bab760a8c3b944a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_45.asset using Guid(d88064601e7313549bab760a8c3b944a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dfd25574e95fbc889ba28b9e5294ce9') in 0.010116 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_102.asset
+  artifactKey: Guid(8b3821c552acdbf478d31785c2b4d3f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_102.asset using Guid(8b3821c552acdbf478d31785c2b4d3f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e29ca311786b16cfcd03ddfd4940a475') in 0.011563 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_103.asset
+  artifactKey: Guid(ce3f462ed3d84d442afc9fac339503b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_103.asset using Guid(ce3f462ed3d84d442afc9fac339503b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '439c6e43c2dacbca7c182affbc22d1c9') in 0.012019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_16.asset
+  artifactKey: Guid(9ef0fd5618d024b47b70f37faaf50c9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_16.asset using Guid(9ef0fd5618d024b47b70f37faaf50c9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa85e923c897f605d7c6085de93d4ad1') in 0.010774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_99.asset
+  artifactKey: Guid(f2d8ab134a08f3f44a14f962187c975a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_99.asset using Guid(f2d8ab134a08f3f44a14f962187c975a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5974c8b0493d00ebd330552edee4453d') in 0.010820 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_29.asset
+  artifactKey: Guid(ad3c2b54167574e40adb4ebb35baeb38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_29.asset using Guid(ad3c2b54167574e40adb4ebb35baeb38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04cf5ef948cc76f6f4ac0dd4c6f65cf6') in 0.011567 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_58.asset
+  artifactKey: Guid(32abe3c47b5399b45ae56eb5b612d1de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_58.asset using Guid(32abe3c47b5399b45ae56eb5b612d1de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae0fbf87d846ff31b41fd276322596fb') in 0.011356 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_168.asset
+  artifactKey: Guid(4bc8afdd2d3c46148bfe1abfbb571058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_168.asset using Guid(4bc8afdd2d3c46148bfe1abfbb571058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24d44e3006693eb1c837614ad52ec34a') in 0.010581 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_98.asset
+  artifactKey: Guid(c59c14d097759e34c8426e4ba7bfaf1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_98.asset using Guid(c59c14d097759e34c8426e4ba7bfaf1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f7391778c7076de6be12ee7aa40273d') in 0.011751 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_42.asset
+  artifactKey: Guid(517f6861696402d4a8e6d4b321525da6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_42.asset using Guid(517f6861696402d4a8e6d4b321525da6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccc869a4c6f9f19caafa9fea8cf9fa60') in 0.009742 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_127.asset
+  artifactKey: Guid(40317976d51e3ce40b04c66a6504ed1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_127.asset using Guid(40317976d51e3ce40b04c66a6504ed1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc7eec430bf2cc86b3f99096acdd796a') in 0.009991 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_30.asset
+  artifactKey: Guid(1a6a145a4090f5b47b53d00c3a54e35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_30.asset using Guid(1a6a145a4090f5b47b53d00c3a54e35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f40cd170204bebb99a03da198d15418') in 0.010273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_175.asset
+  artifactKey: Guid(4138465e13e109348ac9aa8767117a3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_175.asset using Guid(4138465e13e109348ac9aa8767117a3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a50c4d4b33785a73139c9a14d78fd79') in 0.009906 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_107.asset
+  artifactKey: Guid(99ed8c8e0238f384b97560d423643abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_107.asset using Guid(99ed8c8e0238f384b97560d423643abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abc933bda142e7f20e8df090ddd4bc29') in 0.009882 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_24.asset
+  artifactKey: Guid(62d53729e0023f04e8ffb55c9bfb4416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_24.asset using Guid(62d53729e0023f04e8ffb55c9bfb4416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '602153a163011c0d3b0cc7bc23c3b9e4') in 0.011356 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_177.asset
+  artifactKey: Guid(ac1da7d86c10a6c4c8a18e0508ec1aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_177.asset using Guid(ac1da7d86c10a6c4c8a18e0508ec1aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e66934f8d9e1ee78471ab29924bda6c0') in 0.011083 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_63.asset
+  artifactKey: Guid(44e7d0ad3a8908447b8e33728823c391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_63.asset using Guid(44e7d0ad3a8908447b8e33728823c391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6e18b93cdab5300c37d78fadfa62432') in 0.011104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_62.asset
+  artifactKey: Guid(d3af7fb72e8999e4389a32870cba625f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_62.asset using Guid(d3af7fb72e8999e4389a32870cba625f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c5bdced08609efd3a48b0b11f9a3f76') in 0.010562 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_176.asset
+  artifactKey: Guid(e880c73208ebdcb4fa59a4d2349d1d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_176.asset using Guid(e880c73208ebdcb4fa59a4d2349d1d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10736e00203f15ad06b8090f2e86920d') in 0.010070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_28.asset
+  artifactKey: Guid(7024f4f2a14db014d8ab387e7ebf03dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_28.asset using Guid(7024f4f2a14db014d8ab387e7ebf03dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47a686b0dfb8e684d3d148017ea358a1') in 0.010207 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_80.asset
+  artifactKey: Guid(5c0e9b08a6f05bd4f919236cfbbb33e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_80.asset using Guid(5c0e9b08a6f05bd4f919236cfbbb33e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52b3a23335015a51726dc362e984e3f2') in 0.012386 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_43.asset
+  artifactKey: Guid(f1a2f4dfd51db8147b9fee012e32e255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_43.asset using Guid(f1a2f4dfd51db8147b9fee012e32e255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7eb729b0124c16eb82fd206fce1ec90') in 0.010457 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_105.asset
+  artifactKey: Guid(7ba94aeac2bb5954ea776a63463668c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_105.asset using Guid(7ba94aeac2bb5954ea776a63463668c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f72cdfac175c3484af4c5085f5595de3') in 0.010281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_68.asset
+  artifactKey: Guid(7fe5c2ef89decfc4c80042a86a41fcaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_68.asset using Guid(7fe5c2ef89decfc4c80042a86a41fcaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2225b0a26638e799b7b4d0f584ba1687') in 0.010112 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_92.asset
+  artifactKey: Guid(4d8f4fb373a789743b4d29a3327dfc77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_92.asset using Guid(4d8f4fb373a789743b4d29a3327dfc77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c98a2799045df206a8fa71a78891a10') in 0.010414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_59.asset
+  artifactKey: Guid(ee0c7aa429d70244caf42bb7e6b1307b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_59.asset using Guid(ee0c7aa429d70244caf42bb7e6b1307b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8964a05f1fe564c291730fa4c66eff86') in 0.009549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_3.asset
+  artifactKey: Guid(2554a615742354f44a0db9d10fac87ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_3.asset using Guid(2554a615742354f44a0db9d10fac87ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01ff62394c9b77115c02d3bed05eb660') in 0.010635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_19.asset
+  artifactKey: Guid(4e7faee1056211346a18f20a20a848b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_19.asset using Guid(4e7faee1056211346a18f20a20a848b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a78ca62d76765bdd2cb9f5a96db84d1f') in 0.010454 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_79.asset
+  artifactKey: Guid(1e2c95db77bfa6b44b1f5f3c9f3ac046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_79.asset using Guid(1e2c95db77bfa6b44b1f5f3c9f3ac046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59b92ec7191b32827481e7091656d4bb') in 0.010045 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000335 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_35.asset
+  artifactKey: Guid(d0f4c4a141b624540afdb7cc7312e285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_35.asset using Guid(d0f4c4a141b624540afdb7cc7312e285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ab8ec40d7eb883115ba4456f5e2085c') in 0.010912 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_70.asset
+  artifactKey: Guid(be14d83f60687404bb50550b5a43c465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_70.asset using Guid(be14d83f60687404bb50550b5a43c465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e93aa08654f956acdf464e6b8990480') in 0.011317 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_10.asset
+  artifactKey: Guid(99836af43480732419355e1ed368e05e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_10.asset using Guid(99836af43480732419355e1ed368e05e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ad0261f2aff2050ab347876248a0ae9') in 0.010432 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_148.asset
+  artifactKey: Guid(56c843f45b136264fba990f2b2f47a3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_148.asset using Guid(56c843f45b136264fba990f2b2f47a3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd174a442dcd82dd8ea04ab79497d89aa') in 0.010955 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_2.asset
+  artifactKey: Guid(2e3645e0aff13e84180f752659b56749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_2.asset using Guid(2e3645e0aff13e84180f752659b56749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5df8086c29d5d23a44fd29d3fb56609') in 0.011073 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_55.asset
+  artifactKey: Guid(d9b2aa79ff0b2f747a5bc4b254cef1d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_55.asset using Guid(d9b2aa79ff0b2f747a5bc4b254cef1d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73f0a1eb5786717b2e4e6883b216e57f') in 0.011320 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_160.asset
+  artifactKey: Guid(a05ad60ec1e13cb4cb4f63727e3e8188) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_160.asset using Guid(a05ad60ec1e13cb4cb4f63727e3e8188) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b65cce8ae4e6fc046441edfd525e4b47') in 0.011350 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_84.asset
+  artifactKey: Guid(83317eff1d9f99042a367fb1484df574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_84.asset using Guid(83317eff1d9f99042a367fb1484df574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edff9cf0e10958484beddb3496bb42dd') in 0.010850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_117.asset
+  artifactKey: Guid(fa371f69b7f3a3f4e9ecb0e7f2351045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_117.asset using Guid(fa371f69b7f3a3f4e9ecb0e7f2351045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd325833179a24bbc30c9fbead2427703') in 0.010910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_23.asset
+  artifactKey: Guid(a8e3255c9f073254ea55118dd64146b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_23.asset using Guid(a8e3255c9f073254ea55118dd64146b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a49f4f0e0469662c712c1991d3d4d0c7') in 0.011088 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_46.asset
+  artifactKey: Guid(2ab0a113fe36a0a4f93aa962107850c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_46.asset using Guid(2ab0a113fe36a0a4f93aa962107850c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0ab09903f1856c0a727d31ce31c9c63') in 0.011961 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_31.asset
+  artifactKey: Guid(0c061af7ef20ca740af0696182016ef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_31.asset using Guid(0c061af7ef20ca740af0696182016ef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '042fa4bda452dc51ac46cdb8fa4c39b6') in 0.011854 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_163.asset
+  artifactKey: Guid(35891dc8093dbe3489828960097b9ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_163.asset using Guid(35891dc8093dbe3489828960097b9ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a01191febbb472e0704b0218840bba6') in 0.011610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_119.asset
+  artifactKey: Guid(9f5e6f97847b4fa49ad0e12185f90499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_119.asset using Guid(9f5e6f97847b4fa49ad0e12185f90499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bef964ce788ec87e1739d567abbdd19') in 0.012834 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_131.asset
+  artifactKey: Guid(627c572d18a02b740bc221ab1f7a9d55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_131.asset using Guid(627c572d18a02b740bc221ab1f7a9d55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36d2632c494dbf16ab9943b93049a7b3') in 0.011725 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_167.asset
+  artifactKey: Guid(381d8bd8df8305d4cbe2df74c78b3ee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_167.asset using Guid(381d8bd8df8305d4cbe2df74c78b3ee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e7502e55c7ad611538e9c986b9911fe') in 0.011465 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_94.asset
+  artifactKey: Guid(f3fbd5032bbc8414d906bbff1422174a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_94.asset using Guid(f3fbd5032bbc8414d906bbff1422174a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3208beccd2b8674efe47bc1f9d087da6') in 0.011984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_145.asset
+  artifactKey: Guid(5dba593357d73d444ba28f9a96b7a66e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_145.asset using Guid(5dba593357d73d444ba28f9a96b7a66e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98c1bca0c89e1b4bcbf5005ffb3e647b') in 0.010552 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_171.asset
+  artifactKey: Guid(6c3b1daf23c467141ad9acd44be5b0c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_171.asset using Guid(6c3b1daf23c467141ad9acd44be5b0c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3a64a41c31aca7427b2d0227af98268') in 0.010327 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_49.asset
+  artifactKey: Guid(6dd8eafd2b43bb643959632554e54d47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/ForgottenPlains/_Minifantasy_ForgottenPlainsAllTilesAndProps_49.asset using Guid(6dd8eafd2b43bb643959632554e54d47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84cacc917adf92a0483b4db7ba113673') in 0.009683 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.689418 seconds.
+  path: Assets/Tilemaps/Town/Town.prefab
+  artifactKey: Guid(b69114ba845365c4c8401134829d21eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemaps/Town/Town.prefab using Guid(b69114ba845365c4c8401134829d21eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8221b916433742a3182efd8c00fbc8b5') in 0.019629 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.198404 seconds.
+  path: Assets/Sprites/Tilemaps/Town
+  artifactKey: Guid(66dca1e8044cbda4c8230e36760222f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Tilemaps/Town using Guid(66dca1e8044cbda4c8230e36760222f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '354876fc198508ffdd5728b403cb2124') in 0.002426 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007865 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.81 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.092 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.20 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3980 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 158.7 MB.
+System memory in use after: 158.8 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 4598.
+Total: 28.432300 ms (FindLiveObjects: 0.430400 ms CreateObjectMapping: 0.117800 ms MarkObjects: 27.702200 ms  DeleteObjects: 0.179700 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

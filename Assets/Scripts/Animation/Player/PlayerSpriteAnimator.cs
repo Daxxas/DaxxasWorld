@@ -10,21 +10,17 @@ public class PlayerSpriteAnimator : NetworkBehaviour
 {
     private PlayerController playerController;
     private PlayerCombat playerCombat;
-    private Animator animator;
 
-    private NetworkAnimator networkAnimator;
-    private Animator weaponAnimator;
+    [SerializeField] private Animator weaponAnimator;
+    [SerializeField] private NetworkAnimator networkAnimator;
+    [SerializeField] private Animator animator;
     [SerializeField] private Animator shieldAnimator;
+    [SerializeField] private NetworkAnimator shieldNetworkAnimator;
 
-    
     private void Start()
     {
-        weaponAnimator = transform.GetChild(0).GetComponentInChildren<Animator>();
-
         playerController = GetComponent<PlayerController>();
         playerCombat = GetComponent<PlayerCombat>();
-        animator = GetComponent<Animator>();
-        networkAnimator = GetComponent<NetworkAnimator>();
 
         if (playerCombat.isServer)
         {
@@ -60,16 +56,16 @@ public class PlayerSpriteAnimator : NetworkBehaviour
     [Server]
     private void StartBlockAnimation()
     {
-        animator.SetTrigger("blockHit");
-        shieldAnimator.SetTrigger("blockHit");
-        StartBlockAnimationClientRpc();
+        networkAnimator.SetTrigger("blockHit");
+        shieldNetworkAnimator.SetTrigger("blockHit");
+        // StartBlockAnimationClientRpc();
     }
 
-    [ClientRpc]
-    private void StartBlockAnimationClientRpc()
-    {
-        animator.SetTrigger("blockHit");
-        shieldAnimator.SetTrigger("blockHit");
-    }
+    // [ClientRpc]
+    // private void StartBlockAnimationClientRpc()
+    // {
+    //     animator.SetTrigger("blockHit");
+    //     shieldAnimator.SetTrigger("blockHit");
+    // }
 
 }
