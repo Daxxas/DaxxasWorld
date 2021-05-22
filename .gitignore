@@ -6,6 +6,9 @@
 Assets/AssetStoreTools*
 /.idea
 
+/Assets/Feel
+/Assets/Plugins
+
 # Visual Studio cache directory
 .vs/
 

@@ -178,7 +178,7 @@ SpriteRenderer:
   m_SortingLayerID: -492402371
   m_SortingLayer: 3
   m_SortingOrder: 1
-  m_Sprite: {fileID: -6872167156440037232, guid: e238243a098a9144c8b568a4c4ed458b, type: 3}
+  m_Sprite: {fileID: 6940219203910030773, guid: e238243a098a9144c8b568a4c4ed458b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -221,7 +221,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.061205, y: 0.061264038}
+  m_Offset: {x: 0.11917931, y: 0.12270999}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -232,7 +232,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.62486345, y: 0.6244812}
+  m_Size: {x: 0.74081206, y: 0.7473731}
   m_EdgeRadius: 0
 --- !u!114 &1324770570
 MonoBehaviour:
@@ -270,14 +270,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 380870971}
-  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 299476172}
   m_Father: {fileID: 2717028485925079865}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 180}
 --- !u!114 &380870973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,6 +310,7 @@ GameObject:
   - component: {fileID: -9125565349210555645}
   - component: {fileID: 1324770568}
   - component: {fileID: 6928068}
+  - component: {fileID: 3231540849376207572}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -490,8 +491,8 @@ MonoBehaviour:
   syncInterval: 0
   movementSpeed: 7
   moveDirection: {x: 0, y: 0}
-  stickDirection: {x: 0, y: 0}
   lookDirection: 0
+  momentum: {x: 0, y: 0}
   mousePosition: {x: 0, y: 0}
 --- !u!114 &1324770568
 MonoBehaviour:
@@ -508,14 +509,16 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   damage: 1
+  knockback: 15
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 64
   moveWhileAttackReductionCoef: 0.5
   moveWhileBlockReductionCoef: 0.9
+  dashForce: 10
   normalAttackClip: {fileID: 7400000, guid: 17c2156413e9d6343a9758d2a04084a7, type: 2}
   chargedAttackClip: {fileID: 7400000, guid: cd9a443ed9efe014f92f0add4d484695, type: 2}
-  raiseShieldClip: {fileID: 7400000, guid: a953d2d6630156b47a5da25cd54bad0f, type: 2}
+  raiseShieldClip: {fileID: 7400000, guid: 47f13fc01d1aff3479e6d8695e10415d, type: 2}
 --- !u!114 &6928068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -531,6 +534,49 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   maxHealth: 10
+--- !u!114 &3231540849376207572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2717028485925079866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b72de2996c5c40bfb394f3d0e0a98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Feedbacks: []
+  InitializationMode: 2
+  SafeMode: 3
+  Direction: 0
+  AutoChangeDirectionOnEnd: 0
+  AutoPlayOnStart: 0
+  AutoPlayOnEnable: 0
+  DurationMultiplier: 1
+  DisplayFullDurationDetails: 0
+  CooldownDuration: 0
+  InitialDelay: 0
+  FeedbacksIntensity: 1
+  Events:
+    TriggerMMFeedbacksEvents: 0
+    TriggerUnityEvents: 1
+    OnPlay:
+      m_PersistentCalls:
+        m_Calls: []
+    OnPause:
+      m_PersistentCalls:
+        m_Calls: []
+    OnResume:
+      m_PersistentCalls:
+        m_Calls: []
+    OnRevert:
+      m_PersistentCalls:
+        m_Calls: []
+    OnComplete:
+      m_PersistentCalls:
+        m_Calls: []
+  DebugActive: 0
 --- !u!1 &7886740357662310171
 GameObject:
   m_ObjectHideFlags: 0

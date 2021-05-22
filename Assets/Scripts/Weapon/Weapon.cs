@@ -11,13 +11,18 @@ public class Weapon : MonoBehaviour
     private bool isActive = true;
 
     public Action triggerEnter2D;
+
+    private Collider2D collider;
+
+    public Collider2D Collider => collider;
     
     private void Start()
     {
+        collider = GetComponent<Collider2D>();
         characterCombat = GetComponentInParent<CharacterCombat>();
     }
 
-    [Server]
+    [ServerCallback]
     private void OnTriggerEnter2D(Collider2D other)
     {
         characterCombat.WeaponHit(other);

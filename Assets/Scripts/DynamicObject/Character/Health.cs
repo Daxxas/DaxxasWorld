@@ -11,7 +11,9 @@ public class Health : NetworkBehaviour
 
     public int CurrentHealth => currentHealth;
     
-    private Action<int> healthUpdate;
+    private Action<int, int> healthUpdate;
+
+    private PlayerInfoUI playerInfo;
     
     public override void OnStartServer()
     {
@@ -29,12 +31,11 @@ public class Health : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
-            var playerInfo = FindObjectOfType<PlayerInfoUI>();
+            playerInfo = FindObjectOfType<PlayerInfoUI>();
 
             healthUpdate += playerInfo.UpdateHealthBar;
             
-            playerInfo.UpdateMaxHealthBar(maxHealth);
-            playerInfo.UpdateHealthBar(currentHealth);
+            healthUpdate?.Invoke(currentHealth, maxHealth);
         }
     }
 
@@ -47,14 +48,17 @@ public class Health : NetworkBehaviour
             currentHealth = 0;
         }
 
-        healthUpdate?.Invoke(currentHealth);
+        healthUpdate?.Invoke(currentHealth, maxHealth);
     }
 
     private void SyncCurrentHealth(int oldValue, int newValue)
     {
         currentHealth = newValue;
-        
-        healthUpdate?.Invoke(currentHealth);
+
+        if (!isServer)
+        {
+            healthUpdate?.Invoke(currentHealth, maxHealth);
+        }
     }
     
     private void OnDrawGizmos()

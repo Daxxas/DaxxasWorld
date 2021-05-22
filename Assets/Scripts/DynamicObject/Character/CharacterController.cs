@@ -14,13 +14,19 @@ public class CharacterController : NetworkBehaviour
     public SlowStatus SlowStatus => slowStatus;
     
     public Vector2 moveDirection;
-    public Vector2 stickDirection;
+    
+    protected Vector2 pointingDirection;
+    public Vector2 PointingDirection => pointingDirection;
 
     [SyncVar] public int lookDirection = 0;
     
     [SyncVar] protected bool isWalking = false;
     public bool IsWalking => isWalking;
+    
+    public Vector2 momentum = Vector2.zero;
+    protected float momentumCoef = 5f;
 
+    
     [ClientRpc]
     private void UpdateSlowStatus(float newSlow)
     {
@@ -37,5 +43,9 @@ public class CharacterController : NetworkBehaviour
         rigidbody = GetComponent<Rigidbody2D>();
     }
 
-
+    [TargetRpc]
+    public void AddMomentum(Vector2 momentum)
+    {
+        this.momentum += momentum;
+    }
 }

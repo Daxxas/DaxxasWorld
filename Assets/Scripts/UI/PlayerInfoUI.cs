@@ -1,20 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
+
+using MoreMountains.Tools;
+using Sirenix.OdinInspector;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerInfoUI : MonoBehaviour
 {
-    public Slider healthBar;
+    public MMProgressBar healthBar;
 
-    public void UpdateHealthBar(int value)
+    public void UpdateHealthBar(int value, int maxValue)
     {
-        healthBar.value = value;
+        healthBar.UpdateBar(value, 0f, (float) maxValue);
     }
-
-    public void UpdateMaxHealthBar(int value)
-    {
-        healthBar.maxValue = value;
-    }
-    
 }

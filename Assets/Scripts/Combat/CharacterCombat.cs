@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using Combat;
 using Mirror;
 using UnityEngine;
 
@@ -8,10 +10,11 @@ public enum CombatState
     Charge, Attack, ChargeBlock, Idle, BlockReady
 }
 
-public class CharacterCombat : NetworkBehaviour
+public class CharacterCombat : NetworkBehaviour, IHittable
 {
     [SerializeField] private int damage = 1;
-
+    [SerializeField] private float knockback = 3f;
+    
     [SerializeField] private LayerMask whatIsEnemy;
 
     [ShowInInspector] [SyncVar] protected CombatState combatState = CombatState.Idle;
@@ -42,7 +45,7 @@ public class CharacterCombat : NetworkBehaviour
     }
 
     [Server]
-    public void Damage(int damage, bool isCharged = false)
+    public void Damage(int damage, Vector3 sourceDamage, bool isCharged = false)
     {
         if (combatState == CombatState.BlockReady)
         {
@@ -60,6 +63,33 @@ public class CharacterCombat : NetworkBehaviour
         {
             damagedEvent?.Invoke(damage);
         }
+        
+        Knockback(sourceDamage);
+    }
+
+    private List<Collider2D> hitCache = new List<Collider2D>();
+
+    protected void EngageAttack()
+    {
+        
+        ClearHitCache();
+        FirstWeaponHit();
+    }
+
+    [Server]
+    protected void FirstWeaponHit()
+    {
+        Collider2D[] results = new Collider2D[10];
+        Physics2D.OverlapCollider(currentWeapon.Collider, new ContactFilter2D(), results);
+
+  
+        Array.ForEach(results, result =>
+        {
+            if (result != null)
+            {
+                WeaponHit(result);
+            }
+        });
     }
     
     [Server]
@@ -68,10 +98,27 @@ public class CharacterCombat : NetworkBehaviour
         // if collider hit is in layermask whatIsEnemy
         if (whatIsEnemy == (whatIsEnemy | (1 << hit.gameObject.layer)) && combatState == CombatState.Attack)
         {
-            if(hit.TryGetComponent(out CharacterCombat hitCharacter))
+            if (!hitCache.Contains(hit))
             {
-                hitCharacter.Damage(damage, attackIsCharged);
+                if(hit.TryGetComponent(out IHittable hitCharacter))
+                {
+                    hitCharacter.Damage(damage, transform.position, attackIsCharged);
+                }
             }
+            
+            hitCache.Add(hit);
         }
+    }
+
+    [Server]
+    protected void ClearHitCache()
+    {
+        hitCache.Clear();
+    }
+    
+    [Server]
+    private void Knockback(Vector3 source)
+    {
+        characterController.AddMomentum((Vector2) (transform.position - source).normalized * knockback);
     }
 }

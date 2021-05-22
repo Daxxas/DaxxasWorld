@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : CharacterController
 {
     public Vector2 mousePosition;
-
+    
     private Camera camera;
     private WeaponDirectionHandler weaponDirectionHandler;
     private PlayerCombat playerCombat;
@@ -13,7 +13,7 @@ public class PlayerController : CharacterController
     private bool isInitialized = false;
 
     [SyncVar] private Quaternion lookOrientation;
-    
+
     private void Start()
     {
         base.Start();
@@ -37,17 +37,29 @@ public class PlayerController : CharacterController
         {
             if (!isServerOnly)
             {
-                var dir = mousePosition - (Vector2) camera.WorldToScreenPoint(transform.position);
-                float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+                pointingDirection = mousePosition - (Vector2) camera.WorldToScreenPoint(transform.position);
+                float angle = Mathf.Atan2(pointingDirection.y, pointingDirection.x) * Mathf.Rad2Deg;
                 var direction = Quaternion.AngleAxis(angle, Vector3.forward);
                 
                 UpdateCurrentDirection(angle);        
                 UpdateOrientation(direction);
 
                 InputMove(moveDirection);
-                Rigidbody.velocity = Move(moveDirection);
                 
-                CmdUpdatePlayerInfo(lookDirection, direction, isWalking);
+                if (momentum.magnitude > 0.2f)
+                {
+                    momentum = Vector2.Lerp(momentum, Vector3.zero, momentumCoef * Time.deltaTime);
+                }
+                else
+                {
+                    momentum = Vector2.zero;
+                }
+
+                Vector2 currentVelocity = Move(moveDirection) + momentum;
+                
+                Rigidbody.velocity = currentVelocity;
+                
+                CmdUpdatePlayerInfo(lookDirection, direction, isWalking, pointingDirection);
             }
         }
         else
@@ -64,11 +76,12 @@ public class PlayerController : CharacterController
     }
     
     [Command]
-    private void CmdUpdatePlayerInfo(int lookDirection, Quaternion lookOrientation, bool isWalking)
+    private void CmdUpdatePlayerInfo(int lookDirection, Quaternion lookOrientation, bool isWalking, Vector2 pointingDirection)
     {
         this.lookDirection = lookDirection;
         this.lookOrientation = lookOrientation;
         this.isWalking = isWalking;
+        this.pointingDirection = pointingDirection;
     }
 
     private void UpdateCurrentDirection(float angle)

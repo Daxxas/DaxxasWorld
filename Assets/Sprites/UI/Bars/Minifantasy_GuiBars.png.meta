@@ -1,7 +1,10 @@
 fileFormatVersion: 2
 guid: 1d1e49ccbb7b6f84d91efb2b14e965d3
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7755864807043767182
+    second: Minifantasy_GuiBars_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -458,6 +461,27 @@ TextureImporter:
       bones: []
       spriteID: df4f713d700e5e310800000000000000
       internalID: 1433798380598326525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiBars_0
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 531
+        width: 34
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b1ccd13fd52ab60800000000000000
+      internalID: 7755864807043767182
       vertices: []
       indices: 
       edges: []

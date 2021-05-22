@@ -48,20 +48,18 @@ public class InputManager : NetworkBehaviour
     {
         PlayerInput.Gameplay.Move.performed += context => playerController.moveDirection = context.ReadValue<Vector2>();
         PlayerInput.Gameplay.Move.canceled += context => playerController.moveDirection = context.ReadValue<Vector2>();
-        PlayerInput.Gameplay.Direction.performed += context => playerController.stickDirection = context.ReadValue<Vector2>();
-        PlayerInput.Gameplay.Direction.canceled += context => playerController.stickDirection = context.ReadValue<Vector2>();
-        
+
         PlayerInput.Gameplay.MousePosition.performed += context => playerController.mousePosition = context.ReadValue<Vector2>();
         PlayerInput.Gameplay.MousePosition.canceled += context => playerController.mousePosition = context.ReadValue<Vector2>();
 
         PlayerInput.Gameplay.Attack.started += context => playerCombat.StartAttackCmd();
         PlayerInput.Gameplay.Attack.performed += context => playerCombat.PerformAttackCmd();
         PlayerInput.Gameplay.Attack.canceled += context => playerCombat.CancelAttackCmd();
-
-        // PlayerInput.Gameplay.Block.performed += context => playerCombat.BlockCmd(true);
-        // PlayerInput.Gameplay.Block.canceled += context => playerCombat.BlockCmd(false);
         
 #if UNITY_EDITOR
+        // PlayerInput.Gameplay.Block.started += context => playerCombat.BlockCmd(true);
+        // PlayerInput.Gameplay.Block.canceled += context => playerCombat.BlockCmd(false);
+        
         PlayerInput.Gameplay.Block.performed += context => playerCombat.BlockCmd(block = !block);
 #else
         PlayerInput.Gameplay.Block.performed += context => playerCombat.BlockCmd(true);

@@ -10,6 +10,8 @@ public class PlayerCombat : CharacterCombat
 
     [SerializeField] private float moveWhileAttackReductionCoef = 0.5f;
     [SerializeField] private float moveWhileBlockReductionCoef = 0.8f;
+
+    [SerializeField] private float dashForce = 10f;
     
     [SerializeField] private AnimationClip normalAttackClip;
     [SerializeField] private AnimationClip chargedAttackClip;
@@ -18,12 +20,15 @@ public class PlayerCombat : CharacterCombat
     private float attackDuration = 0;
     private float chargedAttackDuration = 0;
 
+    private PlayerController playerController;
 
     private bool isCacheBlocking = false;
 
     public new void Start()
     {
         base.Start();
+
+        playerController = GetComponent<PlayerController>();
         
         chargedAttackDuration = chargedAttackClip.length;
         attackDuration = normalAttackClip.length;
@@ -49,9 +54,10 @@ public class PlayerCombat : CharacterCombat
     {
         if (combatState != CombatState.Charge)
             return;
-
-        combatState = CombatState.Attack;
         
+        // Attack state set in EngageAttack()
+        combatState = CombatState.Attack;
+
         attackIsCharged = true;
         
         StartCoroutine(Attack(chargedAttackDuration));
@@ -63,8 +69,10 @@ public class PlayerCombat : CharacterCombat
     {
         if (combatState != CombatState.Charge)
             return;
-
+        
+        // Attack state set in EngageAttack()
         combatState = CombatState.Attack;
+
         
         attackIsCharged = false;
         
@@ -75,8 +83,8 @@ public class PlayerCombat : CharacterCombat
     public void BlockCmd(bool block)
     {
         isCacheBlocking = block;
-        
-        if (combatState != CombatState.Idle && block == true)
+
+        if (combatState == CombatState.Attack)
         {
             return;
         }
@@ -100,13 +108,13 @@ public class PlayerCombat : CharacterCombat
         {
             if (combatState == CombatState.ChargeBlock)
             {
-                EngageBlock(true);
+                StartCoroutine(EngageBlock());
                 RaiseWeaponClientRpc(false);
                 CharacterController.SlowStatus.AddSlow(-moveWhileBlockReductionCoef);
             }
             else
             {
-                EngageBlock(false);
+                StopCoroutine(EngageBlock());
                 RaiseWeaponClientRpc(true);
                 CharacterController.SlowStatus.AddSlow(moveWhileBlockReductionCoef);
             }
@@ -118,21 +126,7 @@ public class PlayerCombat : CharacterCombat
     {
         currentWeapon.gameObject.SetActive(raising);
     }
-    
-    [Server]
-    private void EngageBlock(bool engaging)
-    {
-        if (engaging)
-        {
-            StartCoroutine(EngageBlock());
-        }
-        else
-        {
-            combatState = CombatState.Idle;
-        }
-        
-    }
-    
+
     [Server]
     private IEnumerator EngageBlock()
     {
@@ -147,7 +141,11 @@ public class PlayerCombat : CharacterCombat
     [Server]
     private IEnumerator Attack(float duration)
     {
-        // TODO : Attack dash here
+        EngageAttack();
+        
+        var dashMomentum = playerController.PointingDirection.normalized * dashForce;
+        
+        playerController.AddMomentum(dashMomentum);
         
         yield return new WaitForSeconds(duration);
 
