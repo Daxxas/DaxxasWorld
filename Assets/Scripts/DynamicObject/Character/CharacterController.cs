@@ -50,4 +50,10 @@ public class CharacterController : NetworkBehaviour
     {
         this.momentum += momentum;
     }
+    
+    [TargetRpc]
+    public void SetMomentum(Vector2 momentum)
+    {
+        this.momentum = momentum;
+    }
 }

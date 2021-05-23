@@ -57,10 +57,10 @@ public class InputManager : NetworkBehaviour
         PlayerInput.Gameplay.Attack.canceled += context => playerCombat.CancelAttackCmd();
         
 #if UNITY_EDITOR
-        // PlayerInput.Gameplay.Block.started += context => playerCombat.BlockCmd(true);
-        // PlayerInput.Gameplay.Block.canceled += context => playerCombat.BlockCmd(false);
+        PlayerInput.Gameplay.Block.performed += context => playerCombat.BlockCmd(true);
+        PlayerInput.Gameplay.Block.canceled += context => playerCombat.BlockCmd(false);
         
-        PlayerInput.Gameplay.Block.performed += context => playerCombat.BlockCmd(block = !block);
+        // PlayerInput.Gameplay.Block.performed += context => playerCombat.BlockCmd(block = !block);
 #else
         PlayerInput.Gameplay.Block.performed += context => playerCombat.BlockCmd(true);
         PlayerInput.Gameplay.Block.canceled += context => playerCombat.BlockCmd(false);

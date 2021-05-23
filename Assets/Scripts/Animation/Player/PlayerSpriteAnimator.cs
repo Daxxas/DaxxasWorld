@@ -43,6 +43,7 @@ public class PlayerSpriteAnimator : NetworkBehaviour
         shieldAnimator.SetBool("isBlocking", playerCombat.CombatState == CombatState.ChargeBlock || playerCombat.CombatState == CombatState.BlockReady);
         weaponAnimator.SetBool("isCharging", playerCombat.CombatState == CombatState.Charge);
         weaponAnimator.SetBool("attackIsCharged", playerCombat.AttackIsCharged);
+        animator.SetBool("isDead", (health.CurrentHealth <= 0));
         
         if (playerController.Rigidbody != null)
         {

@@ -9,6 +9,8 @@ namespace Utility
     /// From https://forum.unity.com/threads/how-can-i-play-an-animation-backwards.498287/#post-5004851
     public static class ReverseAnimationContext
     {
+        #if UNITY_EDITOR
+        
         [MenuItem("Assets/Create Reversed Clip", false, 14)]
         private static void ReverseClip()
         {
@@ -68,5 +70,7 @@ namespace Utility
         private static bool ReverseClipValidation() => Selection.activeObject is AnimationClip;
  
         private static AnimationClip SelectedClip => Selection.GetFiltered<AnimationClip>(SelectionMode.Assets).FirstOrDefault();
+        
+        #endif
     }
 }

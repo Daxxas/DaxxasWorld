@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Combat;
 using Mirror;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public enum CombatState
@@ -35,7 +36,6 @@ public class CharacterCombat : NetworkBehaviour, IHittable
     public Action hitBlock;
     public Action<int> damagedEvent;
     public Action chargedHitWhileBlock;
-    public Action onDie;
     
     public void Start()
     {
@@ -44,6 +44,15 @@ public class CharacterCombat : NetworkBehaviour, IHittable
         currentWeapon = GetComponentInChildren<Weapon>();
         
         damagedEvent += damage => health.ChangeHealth(-damage);
+        health.onDie += Die;
+
+        if (isLocalPlayer)
+        {
+            var localPlayerUI = LocalPlayerUI.Instance;
+
+            localPlayerUI.respawnButton.onClick.AddListener(ResurrectCmd);
+        }
+
     }
 
     [Server]
@@ -67,25 +76,32 @@ public class CharacterCombat : NetworkBehaviour, IHittable
             {
                 damagedEvent?.Invoke(damage);
             }
-
-            if (health.CurrentHealth <= 0)
-            {
-                Die();
-            }
-            else
-            {
+            
+            // Can die after first if, have to recheck here
+            if (combatState != CombatState.Dead)
                 Knockback(sourceDamage);
-            }
         }
     }
 
+    [Server]
     private void Die()
     {
         ChangeCombatState(CombatState.Dead);
         characterController.canMove = false;
         characterController.canControlWeapon = false;
+        characterController.SetMomentum(Vector2.zero);
         SetActiveWeapon(false);
-        onDie?.Invoke();
+    }
+
+    [Command]
+    private void ResurrectCmd()
+    {
+        health.ChangeHealth(health.MaxHealth);
+        combatState = CombatState.Idle;
+        characterController.canMove = true;
+        characterController.canControlWeapon = true;
+        characterController.SetMomentum(Vector2.zero);
+        SetActiveWeapon(true);
     }
 
     [ClientRpc]
