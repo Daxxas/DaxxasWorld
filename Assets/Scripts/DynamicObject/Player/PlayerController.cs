@@ -37,14 +37,18 @@ public class PlayerController : CharacterController
         {
             if (!isServerOnly)
             {
-                pointingDirection = mousePosition - (Vector2) camera.WorldToScreenPoint(transform.position);
-                float angle = Mathf.Atan2(pointingDirection.y, pointingDirection.x) * Mathf.Rad2Deg;
-                var direction = Quaternion.AngleAxis(angle, Vector3.forward);
-                
-                UpdateCurrentDirection(angle);        
-                UpdateOrientation(direction);
+                Quaternion direction = Quaternion.identity;
+                if (canControlWeapon)
+                {
+                    pointingDirection = mousePosition - (Vector2) camera.WorldToScreenPoint(transform.position);
+                    float angle = Mathf.Atan2(pointingDirection.y, pointingDirection.x) * Mathf.Rad2Deg;
+                    direction = Quaternion.AngleAxis(angle, Vector3.forward);
+                    
+                    UpdateCurrentDirection(angle);        
+                    UpdateOrientation(direction);
 
-                InputMove(moveDirection);
+                    InputMove(moveDirection);
+                }
                 
                 if (momentum.magnitude > 0.2f)
                 {
@@ -55,9 +59,12 @@ public class PlayerController : CharacterController
                     momentum = Vector2.zero;
                 }
 
-                Vector2 currentVelocity = Move(moveDirection) + momentum;
-                
-                Rigidbody.velocity = currentVelocity;
+                if (canMove)
+                {
+                    Vector2 currentVelocity = Move(moveDirection) + momentum;
+                    
+                    Rigidbody.velocity = currentVelocity;
+                }
                 
                 CmdUpdatePlayerInfo(lookDirection, direction, isWalking, pointingDirection);
             }

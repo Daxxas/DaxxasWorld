@@ -89,14 +89,19 @@ public class PlayerCombat : CharacterCombat
             return;
         }
 
+        if (combatState == CombatState.Charge)
+        {
+            CharacterController.SlowStatus.AddSlow(moveWhileAttackReductionCoef);
+        }
+        
         isCacheBlocking = false;
-        combatState = block ? CombatState.ChargeBlock : CombatState.Idle;
+        ChangeCombatState(block ? CombatState.ChargeBlock : CombatState.Idle);
         Block();
     }
 
     private void InterruptBlock()
     {
-        combatState = CombatState.Idle;
+        ChangeCombatState(CombatState.Idle);
         CharacterController.SlowStatus.AddSlow(moveWhileBlockReductionCoef);
         RaiseWeaponClientRpc(true);
     }
@@ -133,7 +138,7 @@ public class PlayerCombat : CharacterCombat
         yield return new WaitForSeconds(raiseShieldClip.length);
         if (combatState == CombatState.ChargeBlock)
         {
-            combatState = CombatState.BlockReady;
+            ChangeCombatState(CombatState.BlockReady);
         }
     }
     
@@ -149,13 +154,14 @@ public class PlayerCombat : CharacterCombat
         
         yield return new WaitForSeconds(duration);
 
-        combatState = CombatState.Idle;
+        ChangeCombatState(CombatState.Idle);
+        
         attackIsCharged = false;
         CharacterController.SlowStatus.AddSlow(moveWhileAttackReductionCoef);
         
         if (isCacheBlocking)
         {
-            combatState = CombatState.ChargeBlock;
+            ChangeCombatState(CombatState.ChargeBlock);
             Block();
         }
         

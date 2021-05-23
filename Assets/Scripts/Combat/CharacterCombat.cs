@@ -7,7 +7,7 @@ using UnityEngine;
 
 public enum CombatState
 {
-    Charge, Attack, ChargeBlock, Idle, BlockReady
+    Charge, Attack, ChargeBlock, Idle, BlockReady, Dead
 }
 
 public class CharacterCombat : NetworkBehaviour, IHittable
@@ -18,22 +18,24 @@ public class CharacterCombat : NetworkBehaviour, IHittable
     [SerializeField] private LayerMask whatIsEnemy;
 
     [ShowInInspector] [SyncVar] protected CombatState combatState = CombatState.Idle;
-
     public CombatState CombatState => combatState;
     
     protected Weapon currentWeapon;
     
     private Health health;
-    private CharacterController characterController;
 
+    private CharacterController characterController;
     public CharacterController CharacterController => characterController;
     
     [SyncVar] protected bool attackIsCharged = false;
     public bool AttackIsCharged => attackIsCharged;
     
+    private List<Collider2D> hitCache = new List<Collider2D>();
+
     public Action hitBlock;
     public Action<int> damagedEvent;
     public Action chargedHitWhileBlock;
+    public Action onDie;
     
     public void Start()
     {
@@ -47,28 +49,51 @@ public class CharacterCombat : NetworkBehaviour, IHittable
     [Server]
     public void Damage(int damage, Vector3 sourceDamage, bool isCharged = false)
     {
-        if (combatState == CombatState.BlockReady)
+        if (combatState != CombatState.Dead)
         {
-            if (isCharged)
+            if (combatState == CombatState.BlockReady)
             {
-                chargedHitWhileBlock?.Invoke();
-                damagedEvent?.Invoke(damage);
+                if (isCharged)
+                {
+                    chargedHitWhileBlock?.Invoke();
+                    damagedEvent?.Invoke(damage);
+                }
+                else
+                {
+                    hitBlock?.Invoke();
+                }
             }
             else
             {
-                hitBlock?.Invoke();
+                damagedEvent?.Invoke(damage);
+            }
+
+            if (health.CurrentHealth <= 0)
+            {
+                Die();
+            }
+            else
+            {
+                Knockback(sourceDamage);
             }
         }
-        else
-        {
-            damagedEvent?.Invoke(damage);
-        }
-        
-        Knockback(sourceDamage);
     }
 
-    private List<Collider2D> hitCache = new List<Collider2D>();
+    private void Die()
+    {
+        ChangeCombatState(CombatState.Dead);
+        characterController.canMove = false;
+        characterController.canControlWeapon = false;
+        SetActiveWeapon(false);
+        onDie?.Invoke();
+    }
 
+    [ClientRpc]
+    private void SetActiveWeapon(bool active)
+    {
+        currentWeapon.gameObject.SetActive(active);
+    }
+     
     protected void EngageAttack()
     {
         
@@ -76,6 +101,14 @@ public class CharacterCombat : NetworkBehaviour, IHittable
         FirstWeaponHit();
     }
 
+    protected void ChangeCombatState(CombatState newState)
+    {
+        if (combatState != CombatState.Dead)
+        {
+            combatState = newState;
+        }
+    }
+    
     [Server]
     protected void FirstWeaponHit()
     {

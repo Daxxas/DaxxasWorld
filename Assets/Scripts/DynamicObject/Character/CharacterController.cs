@@ -22,11 +22,13 @@ public class CharacterController : NetworkBehaviour
     
     [SyncVar] protected bool isWalking = false;
     public bool IsWalking => isWalking;
+
+    [SyncVar] public bool canMove = true;
+    [SyncVar] public bool canControlWeapon = true;
     
     public Vector2 momentum = Vector2.zero;
     protected float momentumCoef = 5f;
 
-    
     [ClientRpc]
     private void UpdateSlowStatus(float newSlow)
     {

@@ -492,6 +492,8 @@ MonoBehaviour:
   movementSpeed: 7
   moveDirection: {x: 0, y: 0}
   lookDirection: 0
+  canMove: 1
+  canControlWeapon: 1
   momentum: {x: 0, y: 0}
   mousePosition: {x: 0, y: 0}
 --- !u!114 &1324770568
@@ -533,7 +535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0
-  maxHealth: 10
+  maxHealth: 2
 --- !u!114 &3231540849376207572
 MonoBehaviour:
   m_ObjectHideFlags: 0

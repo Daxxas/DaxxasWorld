@@ -10,6 +10,7 @@ public class PlayerSpriteAnimator : NetworkBehaviour
 {
     private PlayerController playerController;
     private PlayerCombat playerCombat;
+    private Health health;
 
     [SerializeField] private Animator weaponAnimator;
     [SerializeField] private NetworkAnimator networkAnimator;
@@ -21,11 +22,13 @@ public class PlayerSpriteAnimator : NetworkBehaviour
     {
         playerController = GetComponent<PlayerController>();
         playerCombat = GetComponent<PlayerCombat>();
+        health = GetComponent<Health>();
 
         if (playerCombat.isServer)
         {
             playerCombat.hitBlock += StartBlockAnimation;
             playerCombat.damagedEvent += GotHitAnimation;
+            health.healthUpdate += DieAnimation;
         }
     }
 
@@ -51,6 +54,15 @@ public class PlayerSpriteAnimator : NetworkBehaviour
     private void GotHitAnimation(int damage)
     {
         networkAnimator.SetTrigger(Animator.StringToHash("gotHit"));
+    }
+
+    [Server]
+    private void DieAnimation(int currentHealth, int maxHealth)
+    {
+        if (currentHealth <= 0)
+        {
+            networkAnimator.SetTrigger(Animator.StringToHash("die"));
+        }
     }
     
 

@@ -11,7 +11,7 @@ public class Health : NetworkBehaviour
 
     public int CurrentHealth => currentHealth;
     
-    private Action<int, int> healthUpdate;
+    public Action<int, int> healthUpdate;
 
     private PlayerInfoUI playerInfo;
     
