@@ -36,7 +36,6 @@ public class PlayerSpriteAnimator : NetworkBehaviour
     {
         animator.SetInteger("direction", playerController.lookDirection);
         shieldAnimator.SetInteger("direction", playerController.lookDirection);
-        weaponAnimator.SetInteger("direction", playerController.lookDirection);
         animator.SetBool("isWalking", playerController.IsWalking);
         animator.SetBool("isAttacking", playerCombat.CombatState == CombatState.Attack);
         animator.SetBool("isBlocking", playerCombat.CombatState == CombatState.ChargeBlock || playerCombat.CombatState == CombatState.BlockReady);

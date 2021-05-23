@@ -181,7 +181,7 @@ SpriteRenderer:
   m_Sprite: {fileID: 6940219203910030773, guid: e238243a098a9144c8b568a4c4ed458b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 1
+  m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
@@ -270,14 +270,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 380870971}
-  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.07062636, w: 0.99750286}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 299476172}
   m_Father: {fileID: 2717028485925079865}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 728.1}
 --- !u!114 &380870973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,6 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dc34cdcde7b65648a00ecf0b132cedf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isBusy: 0
 --- !u!1 &2717028485925079866
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,7 +538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0
-  maxHealth: 5
+  maxHealth: 1
 --- !u!114 &3231540849376207572
 MonoBehaviour:
   m_ObjectHideFlags: 0

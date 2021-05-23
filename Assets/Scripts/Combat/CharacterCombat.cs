@@ -90,6 +90,7 @@ public class CharacterCombat : NetworkBehaviour, IHittable
         characterController.canMove = false;
         characterController.canControlWeapon = false;
         characterController.SetMomentum(Vector2.zero);
+        characterController.SlowStatus.SetSlow(1f);
         SetActiveWeapon(false);
     }
 
@@ -101,6 +102,7 @@ public class CharacterCombat : NetworkBehaviour, IHittable
         characterController.canMove = true;
         characterController.canControlWeapon = true;
         characterController.SetMomentum(Vector2.zero);
+        characterController.SlowStatus.SetSlow(1f);
         SetActiveWeapon(true);
     }
 

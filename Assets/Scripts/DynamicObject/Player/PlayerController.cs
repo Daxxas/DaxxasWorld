@@ -8,6 +8,8 @@ public class PlayerController : CharacterController
     
     private Camera camera;
     private WeaponDirectionHandler weaponDirectionHandler;
+    public WeaponDirectionHandler WeaponDirectionHandler => weaponDirectionHandler;
+    
     private PlayerCombat playerCombat;
 
     private bool isInitialized = false;
@@ -43,8 +45,9 @@ public class PlayerController : CharacterController
                     pointingDirection = mousePosition - (Vector2) camera.WorldToScreenPoint(transform.position);
                     float angle = Mathf.Atan2(pointingDirection.y, pointingDirection.x) * Mathf.Rad2Deg;
                     direction = Quaternion.AngleAxis(angle, Vector3.forward);
+
                     
-                    UpdateCurrentDirection(angle);        
+                    UpdateCurrentDirection(pointingDirection);        
                     UpdateOrientation(direction);
 
                     InputMove(moveDirection);
@@ -62,8 +65,12 @@ public class PlayerController : CharacterController
                 if (canMove)
                 {
                     Vector2 currentVelocity = Move(moveDirection) + momentum;
-                    
+
                     Rigidbody.velocity = currentVelocity;
+                }
+                else
+                {
+                    Rigidbody.velocity = Vector2.zero;
                 }
                 
                 CmdUpdatePlayerInfo(lookDirection, direction, isWalking, pointingDirection);
@@ -91,9 +98,9 @@ public class PlayerController : CharacterController
         this.pointingDirection = pointingDirection;
     }
 
-    private void UpdateCurrentDirection(float angle)
+    private void UpdateCurrentDirection(Vector2 direction)
     {
-        if (angle > 90 || angle < -90)
+        if (direction.x < 0)
         {
             lookDirection = 1;
         }

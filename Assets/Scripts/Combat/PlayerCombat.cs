@@ -35,7 +35,11 @@ public class PlayerCombat : CharacterCombat
         
         chargedHitWhileBlock += () => { InterruptBlock(); };
     }
-    
+
+    private void Update()
+    {
+        playerController.WeaponDirectionHandler.isBusy = combatState != CombatState.Idle;
+    }
 
     [Command]
     public void StartAttackCmd()
@@ -82,6 +86,7 @@ public class PlayerCombat : CharacterCombat
     [Command]
     public void BlockCmd(bool block)
     {
+        Debug.Log("BlockCmd Called with " + block);
         isCacheBlocking = block;
 
         if (combatState == CombatState.Attack)
@@ -96,6 +101,7 @@ public class PlayerCombat : CharacterCombat
         
         isCacheBlocking = false;
         ChangeCombatState(block ? CombatState.ChargeBlock : CombatState.Idle);
+        Debug.Log("Calling Block()");
         Block();
     }
 
@@ -142,7 +148,7 @@ public class PlayerCombat : CharacterCombat
         }
     }
     
-
+    
     [Server]
     private IEnumerator Attack(float duration)
     {
@@ -164,6 +170,6 @@ public class PlayerCombat : CharacterCombat
             ChangeCombatState(CombatState.ChargeBlock);
             Block();
         }
-        
     }
+    
 }

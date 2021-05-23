@@ -16,6 +16,8 @@ public class SlowStatus
     public void AddSlow(float value)
     {
         currentSlow += value;
+        currentSlow = Mathf.Clamp01(currentSlow);
+        
         updated?.Invoke(currentSlow);
     }
 

@@ -9,6 +9,8 @@ public class WeaponDirectionHandler : MonoBehaviour
     
     private SpriteRenderer weaponChild;
 
+    public bool isBusy = false;
+    
     private bool isInitialized = false;
     
     void Start()
@@ -20,17 +22,17 @@ public class WeaponDirectionHandler : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        if (isInitialized)
+        if (isInitialized && !isBusy)
         {
             if (characterController.lookDirection == 0)
             {
-                weaponChild.flipY = false;
+                weaponChild.transform.localRotation = new Quaternion(0, 0, 0, 0);
             }
             else
             {            
-                weaponChild.flipY = true;
+                weaponChild.transform.localRotation = new Quaternion(180, 0, 0, 0);
             }
             
         }

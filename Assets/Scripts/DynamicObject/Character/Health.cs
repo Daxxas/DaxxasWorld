@@ -1,22 +1,24 @@
 using System;
 using Mirror;
+using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Health : NetworkBehaviour
 {
     [SerializeField] [SyncVar] private int maxHealth = 1;
-    [SyncVar(hook = nameof(OnSyncCurrentHealth))] private int currentHealth;
+
+    [SyncVar(hook = nameof(OnSyncCurrentHealth))]
+    private int currentHealth;
 
     public int CurrentHealth => currentHealth;
     public int MaxHealth => maxHealth;
-    
+
     public Action<int, int> healthUpdate;
     public Action onDie;
 
     private LocalPlayerUI localPlayerUI;
-    
+
     public override void OnStartServer()
     {
         currentHealth = maxHealth;
@@ -25,10 +27,10 @@ public class Health : NetworkBehaviour
     public override void OnStartClient()
     {
         OnSyncCurrentHealth(currentHealth, currentHealth);
-        
+
         base.OnStartClient();
     }
-    
+
     private void Start()
     {
         if (isLocalPlayer)
@@ -37,9 +39,24 @@ public class Health : NetworkBehaviour
 
             healthUpdate += localPlayerUI.UpdateHealthBar;
             healthUpdate += localPlayerUI.UpdateDeathMenu;
-            
+
             healthUpdate?.Invoke(currentHealth, maxHealth);
         }
+    }
+
+    private void Update()
+    {
+        if(Input.GetButtonDown("Jump"))
+        {
+            ReduceHealthBy1();
+        }
+            
+    }
+
+    [ContextMenu("Reduce Health By One")]
+    private void ReduceHealthBy1()
+    {
+        ChangeHealth(-1);
     }
 
     [Server]

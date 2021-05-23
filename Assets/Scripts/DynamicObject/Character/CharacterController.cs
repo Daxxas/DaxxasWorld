@@ -5,6 +5,7 @@ using UnityEngine;
 public class CharacterController : NetworkBehaviour
 {
     private Rigidbody2D rigidbody;
+    
     public Rigidbody2D Rigidbody => rigidbody;
 
     [SerializeField] private float movementSpeed = 1f;
