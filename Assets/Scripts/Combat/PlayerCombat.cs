@@ -13,12 +13,9 @@ public class PlayerCombat : CharacterCombat
 
     [SerializeField] private float dashForce = 10f;
     
-    [SerializeField] private AnimationClip normalAttackClip;
-    [SerializeField] private AnimationClip chargedAttackClip;
-    [SerializeField] private AnimationClip raiseShieldClip;
-    
-    private float attackDuration = 0;
-    private float chargedAttackDuration = 0;
+    [SerializeField] private float attackRecoverTime = 0.5f;
+    [SerializeField] private float chargedAttackRecoverTime = 0.5f;
+    [SerializeField] private float raiseShieldTime = 0.5f;
 
     private PlayerController playerController;
 
@@ -29,16 +26,8 @@ public class PlayerCombat : CharacterCombat
         base.Start();
 
         playerController = GetComponent<PlayerController>();
-        
-        chargedAttackDuration = chargedAttackClip.length;
-        attackDuration = normalAttackClip.length;
-        
-        chargedHitWhileBlock += () => { InterruptBlock(); };
-    }
 
-    private void Update()
-    {
-        playerController.WeaponDirectionHandler.isBusy = combatState != CombatState.Idle;
+        onChargedHitWhileBlock += () => { InterruptBlock(); };
     }
 
     [Command]
@@ -61,10 +50,11 @@ public class PlayerCombat : CharacterCombat
         
         // Attack state set in EngageAttack()
         combatState = CombatState.Attack;
+        onAttack?.Invoke();
 
         attackIsCharged = true;
         
-        StartCoroutine(Attack(chargedAttackDuration));
+        StartCoroutine(Attack(chargedAttackRecoverTime));
     }
     
 
@@ -76,11 +66,12 @@ public class PlayerCombat : CharacterCombat
         
         // Attack state set in EngageAttack()
         combatState = CombatState.Attack;
+        onAttack?.Invoke();
 
         
         attackIsCharged = false;
         
-        StartCoroutine(Attack(attackDuration));
+        StartCoroutine(Attack(attackRecoverTime));
     }
 
     [Command]
@@ -141,7 +132,7 @@ public class PlayerCombat : CharacterCombat
     [Server]
     private IEnumerator EngageBlock()
     {
-        yield return new WaitForSeconds(raiseShieldClip.length);
+        yield return new WaitForSeconds(raiseShieldTime);
         if (combatState == CombatState.ChargeBlock)
         {
             ChangeCombatState(CombatState.BlockReady);

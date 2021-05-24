@@ -26,9 +26,11 @@ public class PlayerSpriteAnimator : NetworkBehaviour
 
         if (playerCombat.isServer)
         {
-            playerCombat.hitBlock += StartBlockAnimation;
-            playerCombat.damagedEvent += GotHitAnimation;
+            playerCombat.onHitBlock += StartBlockAnimation;
+            playerCombat.onDamaged += GotHitAnimation;
+            playerCombat.onAttack += AttackAnimation;
             health.healthUpdate += DieAnimation;
+            
         }
     }
 
@@ -41,6 +43,7 @@ public class PlayerSpriteAnimator : NetworkBehaviour
         animator.SetBool("isBlocking", playerCombat.CombatState == CombatState.ChargeBlock || playerCombat.CombatState == CombatState.BlockReady);
         shieldAnimator.SetBool("isBlocking", playerCombat.CombatState == CombatState.ChargeBlock || playerCombat.CombatState == CombatState.BlockReady);
         weaponAnimator.SetBool("isCharging", playerCombat.CombatState == CombatState.Charge);
+        animator.SetBool("attackIsCharged", playerCombat.AttackIsCharged);
         weaponAnimator.SetBool("attackIsCharged", playerCombat.AttackIsCharged);
         animator.SetBool("isDead", (health.CurrentHealth <= 0));
         
@@ -56,6 +59,12 @@ public class PlayerSpriteAnimator : NetworkBehaviour
         networkAnimator.SetTrigger(Animator.StringToHash("gotHit"));
     }
 
+    [Server]
+    private void AttackAnimation()
+    {
+        networkAnimator.SetTrigger(Animator.StringToHash("attack"));
+    }
+    
     [Server]
     private void DieAnimation(int currentHealth, int maxHealth)
     {

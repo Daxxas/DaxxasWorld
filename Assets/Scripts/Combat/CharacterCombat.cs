@@ -18,7 +18,7 @@ public class CharacterCombat : NetworkBehaviour, IHittable
     
     [SerializeField] private LayerMask whatIsEnemy;
 
-    [ShowInInspector] [SyncVar] protected CombatState combatState = CombatState.Idle;
+    [SerializeField] [SyncVar] protected CombatState combatState = CombatState.Idle;
     public CombatState CombatState => combatState;
     
     protected Weapon currentWeapon;
@@ -33,9 +33,10 @@ public class CharacterCombat : NetworkBehaviour, IHittable
     
     private List<Collider2D> hitCache = new List<Collider2D>();
 
-    public Action hitBlock;
-    public Action<int> damagedEvent;
-    public Action chargedHitWhileBlock;
+    public Action onHitBlock;
+    public Action<int> onDamaged;
+    public Action onChargedHitWhileBlock;
+    public Action onAttack;
     
     public void Start()
     {
@@ -43,7 +44,7 @@ public class CharacterCombat : NetworkBehaviour, IHittable
         characterController = GetComponent<CharacterController>();
         currentWeapon = GetComponentInChildren<Weapon>();
         
-        damagedEvent += damage => health.ChangeHealth(-damage);
+        onDamaged += damage => health.ChangeHealth(-damage);
         health.onDie += Die;
 
         if (isLocalPlayer)
@@ -64,17 +65,17 @@ public class CharacterCombat : NetworkBehaviour, IHittable
             {
                 if (isCharged)
                 {
-                    chargedHitWhileBlock?.Invoke();
-                    damagedEvent?.Invoke(damage);
+                    onChargedHitWhileBlock?.Invoke();
+                    onDamaged?.Invoke(damage);
                 }
                 else
                 {
-                    hitBlock?.Invoke();
+                    onHitBlock?.Invoke();
                 }
             }
             else
             {
-                damagedEvent?.Invoke(damage);
+                onDamaged?.Invoke(damage);
             }
             
             // Can die after first if, have to recheck here

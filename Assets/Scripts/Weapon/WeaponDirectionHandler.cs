@@ -9,7 +9,7 @@ public class WeaponDirectionHandler : MonoBehaviour
     
     private SpriteRenderer weaponChild;
 
-    public bool isBusy = false;
+    private Animator weaponAnimator;
     
     private bool isInitialized = false;
     
@@ -17,15 +17,16 @@ public class WeaponDirectionHandler : MonoBehaviour
     {
         characterController = GetComponentInParent<CharacterController>();
         weaponChild = GetComponentInChildren<SpriteRenderer>();
-
+        weaponAnimator = weaponChild.GetComponent<Animator>();
         isInitialized = true;
     }
 
     // Update is called once per frame
     void LateUpdate()
     {
-        if (isInitialized && !isBusy)
+        if (isInitialized && weaponAnimator.GetCurrentAnimatorStateInfo(0).IsName("idle"))
         {
+            Debug.Log("Animator is in idle state");
             if (characterController.lookDirection == 0)
             {
                 weaponChild.transform.localRotation = new Quaternion(0, 0, 0, 0);
